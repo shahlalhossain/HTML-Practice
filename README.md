@@ -1,5 +1,5 @@
 HTML
 
-I going learn the basics of HTML5
+Lets Starts from the Scratch, Learn some of the basics of HTML5
 
 ====
