@@ -1,61 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/HTML5/1_introduction.html" line="384" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="8efe5b28-9148-46da-95a0-7015cb22f631" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/shahlal.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/10_comments.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/11_colors.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/12_css.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/13_links.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/14_images.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/15_favicon.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/16_page_title.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/17_tables.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/18_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/19_block_elements.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/1_introduction.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/20_inline_elements.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/21_classes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/22_id.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/23_javascript.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/24_file_paths.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/25_head.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/26_layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/27_responsive.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/28_semantics.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/29_forms.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/2_basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/30_form_attributes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/31_form_elements.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/32_input_attributes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/33_input_types.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/34_input_form_attributes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/35_graphics.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/36_audio.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/37_video.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/38_plugins.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/39_geolocation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/3_elements.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/40_web_storage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/41_web_workers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/42_sse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/43_tag_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/44_http_methods.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/45_http_messages.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/4_attributes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/5_headings.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/6_paragraphs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/7_styles.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/8_formatting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/9_quotations.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/images/shahlal.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/images/shahlal1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML5/HTML Elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/HTML Elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/10_comments.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/10_comments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/11_colors.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/11_colors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/12_css.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/12_css.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/13_links.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/13_links.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/14_images.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/14_images.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/15_favicon.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/15_favicon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/16_page_title.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/16_page_title.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/17_tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/17_tables.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/18_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/18_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/19_block_elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/19_block_elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/1_introduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/1_introduction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/20_inline_elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/20_inline_elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/21_classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/21_classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/22_id.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/22_id.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/23_javascript.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/23_javascript.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/24_file_paths.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/24_file_paths.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/25_head.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/25_head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/26_layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/26_layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/27_responsive.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/27_responsive.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/28_semantics.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/28_semantics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/29_forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/29_forms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/2_basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/2_basic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/30_form_attributes.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/30_form_attributes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/31_form_elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/31_form_elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/32_input_attributes.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/32_input_attributes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/33_input_types.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/33_input_types.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/34_input_form_attributes.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/34_input_form_attributes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/35_graphics.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/35_graphics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/36_audio.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/36_audio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/37_video.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/37_video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/38_plugins.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/38_plugins.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/39_geolocation.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/39_geolocation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/3_elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/3_elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/40_web_storage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/40_web_storage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/41_web_workers.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/41_web_workers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/42_sse.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/42_sse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/43_tag_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/43_tag_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/44_http_methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/44_http_methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/45_http_messages.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/45_http_messages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/4_attributes.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/4_attributes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/5_headings.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/5_headings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/6_paragraphs.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/6_paragraphs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/7_styles.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/7_styles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/8_formatting.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/8_formatting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/9_quotations.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/9_quotations.html" afterDir="false" />
     </list>
     <ignored path="HTML.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,22 +67,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML5/css/main.css">
+        <entry file="file://$PROJECT_DIR$/HTML5/24_file_paths.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
+            <state relative-caret-position="412">
+              <caret line="198" column="59" selection-start-line="198" selection-start-column="59" selection-end-line="198" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTML5/23_javascript.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="192" column="59" selection-start-line="192" selection-start-column="59" selection-end-line="192" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTML5/22_id.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="186" column="51" selection-start-line="186" selection-start-column="51" selection-end-line="186" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTML5/21_classes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="469">
+              <caret line="180" column="56" selection-start-line="180" selection-start-column="56" selection-end-line="180" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HTML5/1_introduction.html">
+        <entry file="file://$PROJECT_DIR$/HTML5/20_inline_elements.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="308" column="47" selection-start-line="308" selection-start-column="47" selection-end-line="308" selection-end-column="47" />
-              <folding>
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="754">
+              <caret line="174" column="64" selection-start-line="174" selection-start-column="64" selection-end-line="174" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -110,6 +126,7 @@
       <find>hamburger</find>
       <find>list-style: none</find>
       <find>list</find>
+      <find>class=&quot;active&quot;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -118,29 +135,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/HTML Elements.html" />
-        <option value="$PROJECT_DIR$/HTML5/HTML Attributes.html" />
-        <option value="$PROJECT_DIR$/HTML5/HTML Headings.html" />
-        <option value="$PROJECT_DIR$/HTML5/HTML Paragraphs.html" />
-        <option value="$PROJECT_DIR$/HTML5/HTML Links.html" />
-        <option value="$PROJECT_DIR$/HTML5/HTML Images.html" />
-        <option value="$PROJECT_DIR$/HTML5/HTML Tables.html" />
-        <option value="$PROJECT_DIR$/HTML5/HTML Lists.html" />
-        <option value="$PROJECT_DIR$/HTML5/HTML Horizontal Lists.html" />
         <option value="$PROJECT_DIR$/HTML5/HTML Iframes.html" />
         <option value="$PROJECT_DIR$/HTML5/partials/menu_bar.html" />
         <option value="$PROJECT_DIR$/HTML5/HTML Elements.html" />
         <option value="$PROJECT_DIR$/HTML5/42_http_methods.html" />
         <option value="$PROJECT_DIR$/HTML5/43_http_methods.html" />
-        <option value="$PROJECT_DIR$/HTML5/css/main.css" />
+        <option value="$PROJECT_DIR$/HTML5/2_basic.html" />
+        <option value="$PROJECT_DIR$/HTML5/3_elements.html" />
+        <option value="$PROJECT_DIR$/HTML5/4_attributes.html" />
         <option value="$PROJECT_DIR$/HTML5/1_introduction.html" />
+        <option value="$PROJECT_DIR$/HTML5/5_headings.html" />
+        <option value="$PROJECT_DIR$/HTML5/6_paragraphs.html" />
+        <option value="$PROJECT_DIR$/HTML5/7_styles.html" />
+        <option value="$PROJECT_DIR$/HTML5/8_formatting.html" />
+        <option value="$PROJECT_DIR$/HTML5/9_quotations.html" />
+        <option value="$PROJECT_DIR$/HTML5/10_comments.html" />
+        <option value="$PROJECT_DIR$/HTML5/11_colors.html" />
+        <option value="$PROJECT_DIR$/HTML5/12_css.html" />
+        <option value="$PROJECT_DIR$/HTML5/13_links.html" />
+        <option value="$PROJECT_DIR$/HTML5/14_images.html" />
+        <option value="$PROJECT_DIR$/HTML5/15_favicon.html" />
+        <option value="$PROJECT_DIR$/HTML5/16_page_title.html" />
+        <option value="$PROJECT_DIR$/HTML5/17_tables.html" />
+        <option value="$PROJECT_DIR$/HTML5/18_list.html" />
+        <option value="$PROJECT_DIR$/HTML5/19_block_elements.html" />
+        <option value="$PROJECT_DIR$/HTML5/20_inline_elements.html" />
+        <option value="$PROJECT_DIR$/HTML5/21_classes.html" />
+        <option value="$PROJECT_DIR$/HTML5/22_id.html" />
+        <option value="$PROJECT_DIR$/HTML5/23_javascript.html" />
+        <option value="$PROJECT_DIR$/HTML5/24_file_paths.html" />
+        <option value="$PROJECT_DIR$/HTML5/css/main.css" />
+        <option value="$PROJECT_DIR$/HTML5/45_http_messages.html" />
+        <option value="$PROJECT_DIR$/HTML5/44_http_methods.html" />
+        <option value="$PROJECT_DIR$/HTML5/43_tag_list.html" />
+        <option value="$PROJECT_DIR$/HTML5/42_sse.html" />
+        <option value="$PROJECT_DIR$/HTML5/41_web_workers.html" />
+        <option value="$PROJECT_DIR$/HTML5/40_web_storage.html" />
+        <option value="$PROJECT_DIR$/HTML5/39_geolocation.html" />
+        <option value="$PROJECT_DIR$/HTML5/38_plugins.html" />
+        <option value="$PROJECT_DIR$/HTML5/37_video.html" />
+        <option value="$PROJECT_DIR$/HTML5/36_audio.html" />
+        <option value="$PROJECT_DIR$/HTML5/35_graphics.html" />
+        <option value="$PROJECT_DIR$/HTML5/34_input_form_attributes.html" />
+        <option value="$PROJECT_DIR$/HTML5/33_input_types.html" />
+        <option value="$PROJECT_DIR$/HTML5/32_input_attributes.html" />
+        <option value="$PROJECT_DIR$/HTML5/31_form_elements.html" />
+        <option value="$PROJECT_DIR$/HTML5/30_form_attributes.html" />
+        <option value="$PROJECT_DIR$/HTML5/29_forms.html" />
+        <option value="$PROJECT_DIR$/HTML5/28_semantics.html" />
+        <option value="$PROJECT_DIR$/HTML5/27_responsive.html" />
+        <option value="$PROJECT_DIR$/HTML5/26_layout.html" />
+        <option value="$PROJECT_DIR$/HTML5/25_head.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="363" />
-    <option name="width" value="1557" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="443" />
+    <option name="y" value="1284" />
+    <option name="width" value="868" />
+    <option name="height" value="810" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -182,7 +235,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../adminlte" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -238,18 +291,18 @@
       <workItem from="1683442976512" duration="599000" />
       <workItem from="1684126072269" duration="7890000" />
       <workItem from="1684394937398" duration="14000" />
-      <workItem from="1684743938182" duration="3566000" />
+      <workItem from="1684743938182" duration="12763000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37309000" />
+    <option name="totallyTimeSpent" value="46506000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="363" y="0" width="1557" height="1080" extended-state="4" />
+    <frame x="64" y="1107" width="1856" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3191206" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2661111" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -261,7 +314,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2564935" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2564935" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -312,117 +365,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML5/partials/sidebar.html" />
-    <entry file="file://$PROJECT_DIR$/HTML5/2_basic.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/3_elements.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/HTML5/HTML Elements.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="14" selection-end-line="17" selection-end-column="7" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/4_attributes.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/5_headings.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/6_paragraphs.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/7_styles.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/8_formatting.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/9_quotations.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/10_comments.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/11_colors.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/12_css.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/13_links.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/14_images.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/15_favicon.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/16_page_title.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/17_tables.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/18_list.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/19_block_elements.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/20_inline_elements.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/21_classes.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/22_id.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/23_javascript.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/24_file_paths.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/25_head.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/26_layout.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/27_responsive.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/28_semantics.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/29_forms.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/30_form_attributes.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/31_form_elements.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/33_input_types.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/32_input_attributes.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/34_input_form_attributes.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/36_audio.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/40_web_storage.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML5/HTML Attributes.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -434,55 +382,370 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/41_web_workers.html">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/HTML5/3_elements.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="343" column="37" selection-start-line="343" selection-start-column="37" selection-end-line="343" selection-end-column="37" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/42_sse.html">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/HTML5/4_attributes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="348" column="40" selection-start-line="348" selection-start-column="40" selection-end-line="348" selection-end-column="40" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/2_basic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="356" lean-forward="true" selection-start-line="356" selection-end-line="356" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/1_introduction.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5643">
+          <caret line="57" column="11" lean-forward="true" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
+          <folding>
+            <element signature="e#16996#17002#0" expanded="true" />
+            <element signature="e#17127#17133#0" expanded="true" />
+            <element signature="e#17278#17284#0" expanded="true" />
+            <element signature="e#17424#17430#0" expanded="true" />
+            <element signature="e#17607#17613#0" expanded="true" />
+            <element signature="e#17769#17775#0" expanded="true" />
+            <element signature="e#17949#17955#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/5_headings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="339" column="60" selection-start-line="339" selection-start-column="60" selection-end-line="339" selection-end-column="60" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/6_paragraphs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="89" column="58" selection-start-line="89" selection-start-column="58" selection-end-line="89" selection-end-column="58" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/7_styles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="95" column="54" selection-start-line="95" selection-start-column="54" selection-end-line="95" selection-end-column="54" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/8_formatting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="101" column="58" selection-start-line="101" selection-start-column="58" selection-end-line="101" selection-end-column="58" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/10_comments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="113" column="57" selection-start-line="113" selection-start-column="57" selection-end-line="113" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/9_quotations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="107" column="58" selection-start-line="107" selection-start-column="58" selection-end-line="107" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/11_colors.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="119" column="55" selection-start-line="119" selection-start-column="55" selection-end-line="119" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/13_links.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="132" column="54" selection-start-line="132" selection-start-column="54" selection-end-line="132" selection-end-column="54" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/12_css.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="125" column="52" selection-start-line="125" selection-start-column="52" selection-end-line="125" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/14_images.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="719">
+          <caret line="137" column="55" selection-start-line="137" selection-start-column="55" selection-end-line="137" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/15_favicon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="143" column="56" selection-start-line="143" selection-start-column="56" selection-end-line="143" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/16_page_title.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="150" column="59" selection-start-line="150" selection-start-column="59" selection-end-line="150" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/17_tables.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="155" column="55" selection-start-line="155" selection-start-column="55" selection-end-line="155" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/19_block_elements.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="168" column="63" selection-start-line="168" selection-start-column="63" selection-end-line="168" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML5/45_http_messages.html">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="324" column="62" selection-start-line="324" selection-start-column="62" selection-end-line="324" selection-end-column="62" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/18_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="162" column="53" selection-start-line="162" selection-start-column="53" selection-end-line="162" selection-end-column="53" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML5/44_http_methods.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="368" selection-start-line="368" selection-end-line="368" />
+        <state relative-caret-position="319">
+          <caret line="318" column="61" selection-start-line="318" selection-start-column="61" selection-end-line="318" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML5/43_tag_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" lean-forward="true" selection-end-line="368" />
+        <state relative-caret-position="602">
+          <caret line="325" column="59" lean-forward="true" selection-start-line="325" selection-start-column="59" selection-end-line="325" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/42_sse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="306" column="52" selection-start-line="306" selection-start-column="52" selection-end-line="306" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/41_web_workers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="300" column="60" selection-start-line="300" selection-start-column="60" selection-end-line="300" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML5/39_geolocation.html">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="288" column="46" selection-start-line="288" selection-start-column="46" selection-end-line="288" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/40_web_storage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="794">
+          <caret line="294" column="61" lean-forward="true" selection-start-line="294" selection-start-column="61" selection-end-line="294" selection-end-column="61" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML5/38_plugins.html">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="282" column="56" selection-start-line="282" selection-start-column="56" selection-end-line="282" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/36_audio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="270" column="54" selection-start-line="270" selection-start-column="54" selection-end-line="270" selection-end-column="54" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML5/37_video.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
+        <state relative-caret-position="685">
+          <caret line="276" column="54" selection-start-line="276" selection-start-column="54" selection-end-line="276" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML5/35_graphics.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/1_introduction.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="308" column="47" selection-start-line="308" selection-start-column="47" selection-end-line="308" selection-end-column="47" />
+        <state relative-caret-position="256">
+          <caret line="264" column="57" selection-start-line="264" selection-start-column="57" selection-end-line="264" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/34_input_form_attributes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="258" column="70" selection-start-line="258" selection-start-column="70" selection-end-line="258" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/33_input_types.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="252" column="60" selection-start-line="252" selection-start-column="60" selection-end-line="252" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/32_input_attributes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="246" column="65" selection-start-line="246" selection-start-column="65" selection-end-line="246" selection-end-column="65" />
           <folding>
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#head#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/31_form_elements.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="240" column="62" selection-start-line="240" selection-start-column="62" selection-end-line="240" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/30_form_attributes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="234" column="64" selection-start-line="234" selection-start-column="64" selection-end-line="234" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/29_forms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="228" column="54" selection-start-line="228" selection-start-column="54" selection-end-line="228" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/28_semantics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="222" column="58" selection-start-line="222" selection-start-column="58" selection-end-line="222" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/27_responsive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="794">
+          <caret line="216" column="59" selection-start-line="216" selection-start-column="59" selection-end-line="216" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/25_head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="204" column="53" selection-start-line="204" selection-start-column="53" selection-end-line="204" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/26_layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="210" column="55" selection-start-line="210" selection-start-column="55" selection-end-line="210" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/24_file_paths.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="198" column="59" selection-start-line="198" selection-start-column="59" selection-end-line="198" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/23_javascript.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="192" column="59" selection-start-line="192" selection-start-column="59" selection-end-line="192" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/22_id.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="186" column="51" selection-start-line="186" selection-start-column="51" selection-end-line="186" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/21_classes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="180" column="56" selection-start-line="180" selection-start-column="56" selection-end-line="180" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/20_inline_elements.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="174" column="64" selection-start-line="174" selection-start-column="64" selection-end-line="174" selection-end-column="64" />
         </state>
       </provider>
     </entry>
