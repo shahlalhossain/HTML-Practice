@@ -180,6 +180,17 @@ legend{
     font-family: Consolas,Menlo,"courier new",monospace;
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 4px;
+}
+
 @media (max-width: 768px) {
     .wrapper .sidebar { display: none; }
     .wrapper .section { margin-left: 0; width: 100%; }
