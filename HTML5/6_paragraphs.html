@@ -353,7 +353,263 @@
             </div>
         </div>
         <div class="container">
+            <div class="section_one">
+                <h3>HTML Paragraphs</h3>
+                <p>A paragraph always starts on a new line, and is usually a block of text.</p>
+                <p>
+                    The HTML <span class="codespan">&lt;p&gt;</span> element defines a paragraph.
+                    A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
+                </p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;p&gt; This is a paragraph. &lt;&sol;p&gt; <br>
+                            &lt;p&gt; This is another paragraph. &lt;&sol;p&gt; <br>
+                        </td>
+                        <td>
+                            <p>This is a paragraph.</p>
+                            <p>This is another paragraph.</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
 
+            <br>
+            <div class="horizontal-line"></div>
+            <br>
+
+            <div class="section_two">
+                <h3>HTML Display</h3>
+                <p>One cannot be sure how HTML will be displayed.</p>
+                <p>Large or small screens, and re-sized windows will create different results.</p>
+                <p>With HTML, one cannot change the display by adding extra spaces or extra lines in your HTML code.</p>
+                <p>The browser will automatically remove any extra spaces and lines when the page is displayed:</p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;p&gt;
+                                This paragraph <br>
+                                contains a lot of lines <br>
+                                in the source code, <br>
+                                but the browser <br>
+                                ignores it.
+                            &lt;&sol;p&gt;
+
+                            <br>
+                            <br>
+
+                            &lt;p&gt;
+                                This paragraph <br>
+                                contains &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a lot of spaces <br>
+                                in the source &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; code, <br>
+                                but the &nbsp;&nbsp;&nbsp;&nbsp;browser <br>
+                                ignores it.
+                            &lt;&sol;p&gt;
+                        </td>
+                        <td>
+                            <p>
+                                This paragraph
+                                contains a lot of lines
+                                in the source code,
+                                but the browser
+                                ignores it.
+                            </p>
+                            <br>
+                            <br>
+                            <br>
+                            <p>
+                                This paragraph
+                                contains         a lot of spaces
+                                in the source         code,
+                                but the        browser
+                                ignores it.
+                            </p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br>
+            <div class="horizontal-line"></div>
+            <br>
+
+            <div class="section_three">
+                <h3>HTML Horizontal Rules</h3>
+                <p>The <span class="codespan">&lt;hr&gt;</span> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.</p>
+                <p>The <span class="codespan">&lt;hr&gt;</span> element is used to separate content (or define a change) in an HTML page:</p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;h2&gt; What is HTML? &lt;&sol;h2&gt; <br>
+                            &lt;p&gt; Details Description of HTML &lt;&sol;p&gt; <br>
+                            &lt;hr&gt;<br>
+
+                            &lt;h2&gt; What is CSS? &lt;&sol;h2&gt; <br>
+                            &lt;p&gt; Details Description of CSS &lt;&sol;p&gt; <br>
+                            &lt;hr&gt;<br>
+
+                            &lt;h2&gt; What is JavaScript? &lt;&sol;h2&gt; <br>
+                            &lt;p&gt; Details Description of JavaScript &lt;&sol;p&gt; <br>
+                            &lt;hr&gt;<br>
+
+                            &lt;h2&gt; What is PHP? &lt;&sol;h2&gt; <br>
+                            &lt;p&gt; Details Description of PHP &lt;&sol;p&gt; <br>
+                            &lt;hr&gt;<br>
+
+                            &lt;h2&gt; What is OOP? &lt;&sol;h2&gt; <br>
+                            &lt;p&gt; Details Description of OOP &lt;&sol;p&gt; <br>
+                            &lt;hr&gt;<br>
+
+                            &lt;h2&gt; What is Laravel? &lt;&sol;h2&gt; <br>
+                            &lt;p&gt; Details Description of Laravel &lt;&sol;p&gt; <br>
+                            &lt;hr&gt;<br>
+                        </td>
+                        <td>
+                            <h2>What is HTML?</h2>
+                            <p>Details Description of HTML</p>
+
+                            <br>
+                            <div style="border: 1px solid black"></div>
+
+
+                            <h2>What is CSS?</h2>
+                            <p>
+                                Details Description of CSS
+                            </p>
+
+                            <br>
+                            <div style="border: 1px solid black"></div>
+
+
+                            <h2>What is JavaScript?</h2>
+                            <p>Details Description of JavaScript</p>
+
+                            <br>
+                            <div style="border: 1px solid black"></div>
+
+
+                            <h2>What is PHP?</h2>
+                            <p>Details Description of PHP</p>
+
+                            <br>
+                            <div style="border: 1px solid black"></div>
+
+
+                            <h2>What is OOP?</h2>
+                            <p>Details Description of OOP</p>
+
+                            <br>
+                            <div style="border: 1px solid black"></div>
+
+
+                            <h2>What is Laravel?</h2>
+                            <p>Details Description of Laravel</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <p>The <span class="codespan">&lt;hr&gt;</span> tag is an empty tag, which means that it has no end tag.</p>
+            </div>
+
+            <br>
+            <div class="horizontal-line"></div>
+            <br>
+
+            <div class="section_four">
+                <h3>HTML Line Breaks</h3>
+                <p>The HTML <span class="codespan">&lt;br&gt;</span> element defines a line break.</p>
+                <p>Use <span class="codespan">&lt;br&gt;</span> if you want a line break (a new line) without starting a new paragraph:</p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;&sol;p&gt;
+                        </td>
+                        <td>
+                            <p>This is<br>a paragraph<br>with line breaks.</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p>The <span class="codespan">&lt;br&gt;</span> tag is an empty tag, which means that it has no end tag.</p>
+            </div>
+
+            <br>
+            <div class="horizontal-line"></div>
+            <br>
+
+            <div class="section_five">
+                <h3>The HTML <span class="codespan">&lt;pre&gt;</span> Element</h3>
+                <p>The HTML <span class="codespan">&lt;pre&gt;</span> element defines preformatted text.</p>
+                <p>The text inside a <span class="codespan">&lt;pre&gt;</span> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:</p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;pre&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;My Bonnie lies over the ocean. <br><br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;My Bonnie lies over the sea. <br><br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;My Bonnie lies over the ocean. <br><br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;Oh, bring back my Bonnie to me. <br>
+                            &lt;&sol;pre&gt;
+                        </td>
+                        <td>
+                            <pre>
+                                My Bonnie lies over the ocean.
+
+                                My Bonnie lies over the sea.
+
+                                My Bonnie lies over the ocean.
+
+                                Oh, bring back my Bonnie to me.
+                            </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
