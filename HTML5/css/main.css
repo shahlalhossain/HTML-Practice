@@ -160,6 +160,26 @@ body.active .wrapper .fixed_topbar{
     width: 100%;
 }
 
+fieldset {
+    border: 2px solid#ddd;
+    padding: 12px;
+}
+
+legend{
+    font-size: 18px;
+    padding: 0;
+}
+
+
+.codespan{
+    font-size: 105%;
+    background-color: rgba(222,222,222,0.3);
+    color: crimson;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-family: Consolas,Menlo,"courier new",monospace;
+}
+
 @media (max-width: 768px) {
     .wrapper .sidebar { display: none; }
     .wrapper .section { margin-left: 0; width: 100%; }
