@@ -354,6 +354,322 @@
         </div>
         <div class="container">
 
+            <div class="section_one">
+                <h3>HTML Styles - CSS</h3>
+                <p>
+                    CSS stands for Cascading Style Sheets. CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+                </p>
+
+                <hr>
+
+                <h3>What is CSS?</h3>
+                <p>
+                    Cascading Style Sheets (CSS) is used to format the layout of a webpage. With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!
+                </p>
+                <br>
+                <p style="background-color: antiquewhite">
+                    <b>Tip: </b> The word <b>cascading</b> means that a style applied to a parent element will also apply to all children elements within the parent. So, if you set the color of the body text to "blue", all headings, paragraphs, and other text elements within the body will also get the same color!
+                </p>
+
+                <hr>
+
+                <h3>Using CSS</h3>
+                <p>CSS can be added to HTML documents in 3 ways:</p>
+                <ul style="padding-left: 30px;">
+                    <li><b>Inline</b> - by using the <span class="codespan">style</span> attribute inside HTML elements</li>
+                    <li><b>Internal</b> - by using a <span class="codespan">&lt;style&gt;</span> element in the <span class="codespan">&lt;head&gt;</span> section</li>
+                    <li><b>External</b> - by using a <span class="codespan">&lt;link&gt;</span> element to link to an external CSS file</li>
+                </ul>
+
+                <p><b>Note: </b>The most common way to add CSS, is to keep the styles in external CSS files.</p>
+
+                <hr>
+
+            </div>
+
+            <div class="section_two">
+                <h3>Inline CSS</h3>
+                <p>
+                    An inline CSS is used to apply a unique style to a single HTML element.
+                    An inline CSS uses the <span class="codespan">style</span> attribute of an HTML element.
+                </p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th style="width: 70%">Example Code</th>
+                        <th style="width: 30%">Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;p style="color: red;"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whoever builds a mosque for the sake of Allah, Allah will build for him a house in Paradise<br>
+                            &lt;&sol;p&gt;
+                            <br>
+                            &lt;article style="background-color: darkgreen; color: white;"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whoever builds a mosque for the sake of Allah, Allah will build for him a house in Paradise<br>
+                            &lt;&sol;article&gt;
+                            <br>
+                            &lt;div style="border: 3px solid darkblue;"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whoever builds a mosque for the sake of Allah, Allah will build for him a house in Paradise<br>
+                            &lt;&sol;div&gt;
+                        </td>
+                        <td style="text-align: center;">
+                            <p style="color: red;">
+                                Whoever builds a mosque for the sake of Allah, <br> Allah will build for him a house in Paradise
+                            </p>
+                            <br>
+                            <article style="background-color: darkgreen; color: white;">
+                                Whoever builds a mosque for the sake of Allah, <br> Allah will build for him a house in Paradise
+                            </article>
+                            <br>
+                            <div style="border: 3px solid darkblue;">
+                                Whoever builds a mosque for the sake of Allah, <br> Allah will build for him a house in Paradise
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_three">
+                <h3>Internal CSS</h3>
+                <p>
+                    An internal CSS is used to define a style for a single HTML page.
+                    An internal CSS is defined in the <span class="codespan">head</span> section of an HTML page, within a <span class="codespan">style</span> element.
+                </p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+
+                            &lt;!DOCTYPE html&gt; <br>
+                            &lt;html&gt; <br>
+                            &lt;head&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p {color: red;} <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;article {background-color: darkgreen;} <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div {border: 3px solid darkblue;} <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&sol;style&gt;<br>
+                            &lt;&sol;head&gt; <br>
+                            &lt;body&gt; <br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Whoever builds a mosque for the sake of Allah, Allah will build for him a house in Paradise&lt;&sol;p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;article&gt;Whoever builds a mosque for the sake of Allah, Allah will build for him a house in Paradise&lt;&sol;article&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;Whoever builds a mosque for the sake of Allah, Allah will build for him a house in Paradise&lt;&sol;div&gt; <br>
+
+                            &lt;&sol;body&gt; <br>
+                            &lt;&sol;html&gt;
+
+
+                        </td>
+                        <td style="text-align: center;">
+                            <p style="color: red; border: 1px solid black">
+                                Whoever builds a mosque for the sake of Allah, <br> Allah will build for him a house in Paradise
+                            </p>
+                            <br>
+                            <article style="background-color: darkgreen; color: white;">
+                                Whoever builds a mosque for the sake of Allah, <br> Allah will build for him a house in Paradise
+                            </article>
+                            <br>
+                            <div style="border: 3px solid darkblue;">
+                                Whoever builds a mosque for the sake of Allah, <br> Allah will build for him a house in Paradise
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_four">
+                <h3>External CSS</h3>
+                <p>
+                    An external style sheet is used to define the style for many HTML pages.
+                    To use an external style sheet, add a link to it in the <span class="codespan">&lt;head&gt;</span> section of each HTML page:
+                </p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+
+                            &lt;!DOCTYPE html&gt; <br>
+                            &lt;html&gt; <br>
+                            &lt;head&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="styles.css"&gt; <br>
+                            &lt;&sol;head&gt; <br>
+                            &lt;body&gt; <br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Whoever builds a mosque for the sake of Allah, Allah will build for him a house in Paradise&lt;&sol;p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;article&gt;Whoever builds a mosque for the sake of Allah, Allah will build for him a house in Paradise&lt;&sol;article&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;Whoever builds a mosque for the sake of Allah, Allah will build for him a house in Paradise&lt;&sol;div&gt; <br>
+
+                            &lt;&sol;body&gt; <br>
+                            &lt;&sol;html&gt;
+
+
+                        </td>
+                        <td style="text-align: center;">
+                            <p style="color: red; border: 1px solid black">
+                                Whoever builds a mosque for the sake of Allah, <br> Allah will build for him a house in Paradise
+                            </p>
+                            <br>
+                            <article style="background-color: darkgreen; color: white;">
+                                Whoever builds a mosque for the sake of Allah, <br> Allah will build for him a house in Paradise
+                            </article>
+                            <br>
+                            <div style="border: 3px solid darkblue;">
+                                Whoever builds a mosque for the sake of Allah, <br> Allah will build for him a house in Paradise
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p>
+                    The external style sheet can be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension. <br>
+                    Here is what the "styles.css" file looks like:
+                </p>
+                <table>
+                    <tbody>
+                    <tr>
+                        <th>styles.css</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            p {color: red;} <br>
+                            article {background-color: darkgreen;} <br>
+                            div {border: 3px solid darkblue;} <br>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_five">
+                <h3>CSS Border</h3>
+                <p>The CSS border property defines a border around an HTML element.</p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th style="width: 40%;">Example Code</th>
+                        <th style="width: 60%;">Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td style="width: 40%;">
+                            p { border: 3px solid darkorchid; }
+                        </td>
+                        <td style="width: 60%;">
+                            <p style="border: 3px solid darkorchid;">
+                                Whoever builds a mosque for the sake of Allah, Allah will build for him a house in Paradise
+                            </p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_six">
+                <h3>CSS Padding</h3>
+                <p>The CSS <span class="codespan">padding</span> property defines a padding (space) between the text and the border.</p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th style="width: 40%;">Example Code</th>
+                        <th style="width: 60%;">Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td style="width: 40%;">
+                            p {
+                                border: 3px solid darkorchid;
+                                padding: 30px;
+                            }
+                        </td>
+                        <td style="width: 60%;">
+                            <p style="border: 3px solid darkorchid; padding: 30px;">
+                                Whoever builds a mosque for the sake of Allah, Allah will build for him a house in Paradise
+                            </p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_seven">
+                <h3>CSS Margin</h3>
+                <p>The CSS <span class="codespan">margin</span> property defines a margin (space) outside the border.</p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th style="width: 40%;">Example Code</th>
+                        <th style="width: 60%;">Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td style="width: 40%;">
+                            p {
+                            border: 3px solid darkorchid;
+                            margin: 30px;
+                            }
+                        </td>
+                        <td style="width: 60%;">
+                            <p style="border: 3px solid darkorchid; margin: 30px;">
+                                Whoever builds a mosque for the sake of Allah, Allah will build for him a house in Paradise
+                            </p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_eight">
+                <h3>Link to External CSS</h3>
+                <p>External style sheets can be referenced with a full URL or with a path relative to the current web page.</p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Remarks</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>&lt;link rel="stylesheet" href="styles.css"&gt;</td>
+                        <td>This example links to a style sheet located in the same folder as the current page.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;link rel="stylesheet" href="/css/styles.css"&gt;</td>
+                        <td>This example links to a style sheet located in the css folder on the current web site.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"&gt;</td>
+                        <td>This example uses a full URL to link to a style sheet.</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
