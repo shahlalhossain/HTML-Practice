@@ -13,6 +13,10 @@
     <meta name="author" content="Shahlal Hossain">
     <!--Meta Section End-->
 
+    <!--Favicon Icon Start-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!--Favicon Icon End-->
+
     <!--External CSS Library Inclusion Start-->
     <link type="text/css" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <!--<link type="text/css" rel="stylesheet" href="#">-->
@@ -352,6 +356,113 @@
             </div>
         </div>
         <div class="container">
+            <div class="section_one">
+                <h3>HTML Favicon</h3>
+                <p>
+                    A favicon is a small image displayed next to the page title in the browser tab. <br>
+                    A favicon is a small image, so it should be a simple image with high contrast. <br>
+                    A favicon image is displayed to the left of the page title in the browser tab, as like below: <br>
+                    <img src="images/favicon_example.png" alt="Favicon in Browser" style="width: 100%; height: auto; border: 1px solid black">
+                </p>
+                <p>
+                    To add a favicon to your website, either save your favicon image to the root directory of your webserver, or create a folder in the root directory called images, and save your favicon image in this folder. A common name for a favicon image is "favicon.ico". <br>
+                    And then, add a <span class="codespan">&lt;link&gt;</span> element into the "index.html" file, after the <span class="codespan">&lt;title&gt;</span> element, like as below:
+                </p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th style="width: 40%;">Example Code</th>
+                        <th style="width: 60%;">Output (Sample)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;!DOCTYPE html&gt; <br>
+                            &lt;html&gt; <br>
+                            &lt;head&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;SH-Tech | Home&lt;&sol;title&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel="icon" type="image/x-icon" href="/images/favicon.ico"&gt; <br>
+                            &lt;&sol;head&gt; <br>
+                            &lt;body&gt; <br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;This is a Heading&lt;&sol;h1&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;This is a paragraph.&lt;&sol;p&gt; <br>
+
+                            &lt;&sol;body&gt; <br>
+                            &lt;&sol;html&gt;
+                        </td>
+                        <td>
+                            <img src="images/favicon_example_short.png" alt="Favicon in Browser" style="width: 100%; height: auto; border: 1px solid black">
+                            <p>Please check the Browser's Open Tab and notice at the before of Page Title (SH-Tech | Home)</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p>Now, save the "index.html" file and open/reload it in any browser. The browser tab should now display the favicon image to the left of the page title.</p>
+            </div>
+            <br><br>
+
+            <div class="section_two">
+                <h3>Favicon File Format Support</h3>
+                <p>The following table shows the file format support for a favicon image:</p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Browser</th>
+                        <th>ICO</th>
+                        <th>PNG</th>
+                        <th>GIF</th>
+                        <th>JPEG</th>
+                        <th>SVG</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Edge</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Chrome</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Firefox</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Opera</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Safari</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
 
         </div>
     </div>
