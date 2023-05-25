@@ -352,7 +352,160 @@
             </div>
         </div>
         <div class="container">
+            <div class="section_one">
+                <h3>HTML Tables</h3>
+                <p>
+                    HTML tables allow web developers to arrange data into rows and columns. <br>
+                    A table in HTML consists of table cells inside rows and columns.
+                </p>
+                <strong>Example</strong>
+                <div style="border: 1px solid blue; padding: 5px;">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>SN</th>
+                            <th>Name</th>
+                            <th>Mobile</th>
+                            <th>Email</th>
+                            <th>Gender</th>
+                            <th>Age</th>
+                            <th>City</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>Shahlal Hossain</td>
+                            <td>+8801731479874</td>
+                            <td>shahlal@gmail.com</td>
+                            <td>Male</td>
+                            <td>25</td>
+                            <td>Rajshahi</td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>Kamal Hossain</td>
+                            <td>+8801731479875</td>
+                            <td>kamal@gmail.com</td>
+                            <td>Male</td>
+                            <td>27</td>
+                            <td>Rangpur</td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>Jamal Hossain</td>
+                            <td>+8801731479854</td>
+                            <td>jamal@gmail.com</td>
+                            <td>Male</td>
+                            <td>35</td>
+                            <td>Sylhet</td>
+                        </tr>
+                        <tr>
+                            <td>04</td>
+                            <td>Fatema Jahan</td>
+                            <td>+8801731589874</td>
+                            <td>fatema@gmail.com</td>
+                            <td>Female</td>
+                            <td>23</td>
+                            <td>Dhaka</td>
+                        </tr>
+                        <tr>
+                            <td>05</td>
+                            <td>Habiba Khatun</td>
+                            <td>+8801798589874</td>
+                            <td>habiba@gmail.com</td>
+                            <td>Female</td>
+                            <td>33</td>
+                            <td>Barisal</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <br><br>
 
+            <div class="section_two">
+                <h3>Table Cells</h3>
+                <div style="border: 1px solid blue; padding: 10px;">
+                    <p>
+                        Each table cell is defined by a <span class="codespan">&lt;td&gt;</span> and a <span class="codespan">&lt;td&sol;&gt;</span> tag. <br>
+                        Everything between <span class="codespan">&lt;td&gt;</span> and <span class="codespan">&lt;td&sol;&gt;</span> are the content of the table cell. <br>
+                        <span class="codespan">td</span> stands for table data. <br>
+                        <b>Note: </b> A table cell can contain all sorts of HTML elements: text, images, lists, links, other tables, etc.
+                    </p>
+                </div>
+            </div>
+            <br><br>
+
+            <div class="section_two">
+                <h3>Table Rows</h3>
+                <div style="border: 1px solid blue; padding: 10px;">
+                    <p>
+                        Each table row starts with a  <span class="codespan">&lt;tr&gt;</span> and ends with a <span class="codespan">&lt;tr&sol;&gt;</span> tag. <br>
+                        You can have as many rows as you like in a table; just make sure that the number of cells are the same in each row. <br>
+                        <span class="codespan">tr</span> stands for table row. <br>
+                        <b>Note: </b> There are times when a row can have less or more cells than another.
+                    </p>
+                </div>
+            </div>
+            <br><br>
+
+            <div class="section_three">
+                <h3>HTML Table - Colspan</h3>
+                <div style="border: 1px solid blue; padding: 10px;">
+                    <p>
+                        To make a cell span over multiple columns, use the <span class="codespan">colspan</span> attribute:
+                    </p>
+
+                    <strong>Example</strong> <br>
+
+                    <table style="width:70%">
+                        <tr>
+                            <th colspan="2">Name</th>
+                            <th>Age</th>
+                        </tr>
+                        <tr>
+                            <td>Shahlal</td>
+                            <td>Hossain</td>
+                            <td>43</td>
+                        </tr>
+                        <tr>
+                            <td>Kamal</td>
+                            <td>Hossain</td>
+                            <td>57</td>
+                        </tr>
+                    </table>
+                    <b>Note: </b>The value of the <span class="codespan">colspan</span> attribute represents the number of columns to span.
+                </div>
+            </div>
+            <br><br>
+
+            <div class="section_four">
+                <h3>HTML Table - rowspan</h3>
+                <div style="border: 1px solid blue; padding: 10px;">
+                    <p>
+                        To make a cell span over multiple rows, use the  <span class="codespan">rowspan</span> attribute:
+                    </p>
+
+                    <strong>Example</strong> <br>
+
+                    <table style="width:70%">
+                        <tr>
+                            <th>Name</th>
+                            <td>Shahlal Hossain</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2">Mobile</th>
+                            <td>+8801731479874</td>
+                        </tr>
+                        <tr>
+                            <td>+8801918522392</td>
+                        </tr>
+                    </table>
+                    <b>Note: </b>The value of the <span class="codespan">rowspan</span> attribute represents the number of rows to span.
+                </div>
+            </div>
+            <br><br>
         </div>
     </div>
 </div>
