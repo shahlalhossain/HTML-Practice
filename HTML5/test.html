@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .bangladesh {
+            background-color: green;
+            width: 800px;
+            height: 480px;
+            position: relative;
+        }
+        .bangladesh::after {
+            content: "";
+            background-color: red;
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            position: absolute;
+            left: 200px;
+            top: 70px;
+
+        }
+    </style>
+</head>
+<body style="text-align: center">
+
+<div class="bangladesh"></div>
+</body>
+</html>
