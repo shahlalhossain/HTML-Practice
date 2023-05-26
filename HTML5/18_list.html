@@ -353,6 +353,373 @@
             </div>
         </div>
         <div class="container">
+            <div class="section_one">
+                <h3>HTML Lists</h3>
+                <p>HTML lists allow web developers to group a set of related items in lists. There are several types of list are available in HTML.</p>
+
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <h3>Ordered Lists</h3>
+                            <ol style="padding-left: 30px;">
+                                <li>Numbers</li>
+                                <li>Uppercase Letters</li>
+                                <li>Lowercase Letters</li>
+                                <li>Uppercase Roman Numbers</li>
+                                <li>Lowercase Roman Numbers</li>
+                                <li>Nested Ordered Lists</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <h3>Unordered Lists</h3>
+                            <ul style="padding-left: 30px;">
+                                <li>Disc</li>
+                                <li>Circle</li>
+                                <li>Square</li>
+                                <li>None</li>
+                                <li>Nested Unordered Lists</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <h3>Description Lists</h3>
+                            <dl style="padding-left: 30px;">
+                                <dt>HTML</dt>
+                                <dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- HTML is a Markup Language</dd>
+                                <dt>JavaScript</dt>
+                                <dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- JavaScript is Scripting Language</dd>
+                                <dt>PHP</dt>
+                                <dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- PHP is a Programming Language</dd>
+                                <dt>SQL</dt>
+                                <dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- SQL is a Data Query Language</dd>
+                            </dl>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_two">
+                <h3>HTML Ordered Lists</h3>
+                <p>
+                    The HTML <span class="codespan">&lt;ol&lt;</span> tag defines an ordered list. An ordered list can be numerical or alphabetical. <br>
+                    An ordered list starts with the <span class="codespan">&lt;ol&gt;</span> tag. Each list item starts with the <span class="codespan">&lt;li&gt;</span> tag. <br>
+                    The list items will be marked with numbers by default:
+                </p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;ol&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Coffee&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Tea&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Milk&lt;&sol;li&gt; <br>
+                            &lt;&sol;ol&gt;
+                        </td>
+                        <td>
+                            <ol style="padding-left: 30px;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_three">
+                <h3>Ordered HTML List - The Type Attribute</h3>
+                <p>The <span class="codespan">type</span> attribute of the <span class="codespan">&lt;ol&gt;</span> tag, defines the type of the list item marker. It can have one of the following values:</p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>type="1"</td>
+                        <td>The list items will be numbered with numbers (default)</td>
+                    </tr>
+                    <tr>
+                        <td>type="A"</td>
+                        <td>The list items will be numbered with uppercase letters</td>
+                    </tr>
+                    <tr>
+                        <td>type="a"</td>
+                        <td>The list items will be numbered with lowercase letters</td>
+                    </tr>
+                    <tr>
+                        <td>type="I"</td>
+                        <td>The list items will be numbered with uppercase roman numbers</td>
+                    </tr>
+                    <tr>
+                        <td>type="i"</td>
+                        <td>The list items will be numbered with lowercase roman numbers</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_four">
+                <h3>Type wise Ordered List Examples</h3>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td><strong>Example Code</strong></td>
+                        <td><strong>Sample Output</strong></td>
+                    </tr>
+                    <tr><td colspan="2"><strong><i>Numbers</i></strong></td></tr>
+                    <tr>
+                        <td>
+                            &lt;ol type="1"&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Coffee&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Tea&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Milk&lt;&sol;li&gt; <br>
+                            &lt;&sol;ol&gt;
+                        </td>
+                        <td>
+                            <ol type="1" style="padding-left: 30px;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr><td colspan="2"><strong><i>Uppercase Letters</i></strong></td></tr>
+                    <tr>
+                        <td>
+                            &lt;ol type="A"&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Coffee&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Tea&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Milk&lt;&sol;li&gt; <br>
+                            &lt;&sol;ol&gt;
+                        </td>
+                        <td>
+                            <ol type="A" style="padding-left: 30px;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr><td colspan="2"><strong><i>Lowercase Letters</i></strong></td></tr>
+                    <tr>
+                        <td>
+                            &lt;ol type="a"&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Coffee&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Tea&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Milk&lt;&sol;li&gt; <br>
+                            &lt;&sol;ol&gt;
+                        </td>
+                        <td>
+                            <ol type="a" style="padding-left: 30px;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr><td colspan="2"><strong><i>Uppercase Roman Numbers</i></strong></td></tr>
+                    <tr>
+                        <td>
+                            &lt;ol type="I"&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Coffee&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Tea&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Milk&lt;&sol;li&gt; <br>
+                            &lt;&sol;ol&gt;
+                        </td>
+                        <td>
+                            <ol type="I" style="padding-left: 30px;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr><td colspan="2"><strong><i>Lowercase Roman Numbers</i></strong></td></tr>
+                    <tr>
+                        <td>
+                            &lt;ol type="i"&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Coffee&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Tea&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Milk&lt;&sol;li&gt; <br>
+                            &lt;&sol;ol&gt;
+                        </td>
+                        <td>
+                            <ol type="i" style="padding-left: 30px;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_five">
+                <h3>HTML Unordered Lists</h3>
+                <p>
+                    The HTML <span class="codespan">&lt;ul&gt;</span> tag defines an unordered (bulleted) list. <br>
+                    An unordered list starts with the <span class="codespan">&lt;ul&gt;</span> tag. Each list item starts with the <span class="codespan">&lt;li&gt;</span> tag. <br>
+                    The list items will be marked with bullets (small black circles) by default:
+                </p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;ul&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Coffee&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Tea&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Milk&lt;&sol;li&gt; <br>
+                            &lt;&sol;ul&gt;
+                        </td>
+                        <td>
+                            <ul style="padding-left: 30px;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_six">
+                <h3>Unordered HTML List - The Type Attribute</h3>
+                <p>The <span class="codespan">type</span> attribute of the <span class="codespan">&lt;ul&gt;</span> tag, defines the type of the list item marker. It can have one of the following values:</p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>type="disc"</td>
+                        <td>Sets the list item marker to a bullet (default)</td>
+                    </tr>
+                    <tr>
+                        <td>type="circle"</td>
+                        <td>Sets the list item marker to a circle</td>
+                    </tr>
+                    <tr>
+                        <td>type="square"</td>
+                        <td>Sets the list item marker to a square</td>
+                    </tr>
+                    <tr>
+                        <td>type="none"</td>
+                        <td>The list items will not be marked</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_four">
+                <h3>Type wise Unordered List Examples</h3>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td><strong>Example Code</strong></td>
+                        <td><strong>Sample Output</strong></td>
+                    </tr>
+                    <tr><td colspan="2"><strong><i>Disc</i></strong></td></tr>
+                    <tr>
+                        <td>
+                            &lt;ul type="disc"&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Coffee&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Tea&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Milk&lt;&sol;li&gt; <br>
+                            &lt;&sol;ul&gt;
+                        </td>
+                        <td>
+                            <ul type="disc" style="padding-left: 30px;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr><td colspan="2"><strong><i>Circle</i></strong></td></tr>
+                    <tr>
+                        <td>
+                            &lt;ul type="circle"&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Coffee&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Tea&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Milk&lt;&sol;li&gt; <br>
+                            &lt;&sol;ul&gt;
+                        </td>
+                        <td>
+                            <ul type="circle" style="padding-left: 30px;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr><td colspan="2"><strong><i>Square</i></strong></td></tr>
+                    <tr>
+                        <td>
+                            &lt;ul type="square"&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Coffee&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Tea&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Milk&lt;&sol;li&gt; <br>
+                            &lt;&sol;ul&gt;
+                        </td>
+                        <td>
+                            <ul type="square" style="padding-left: 30px;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr><td colspan="2"><strong><i>None</i></strong></td></tr>
+                    <tr>
+                        <td>
+                            &lt;ul type="none"&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Coffee&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Tea&lt;&sol;li&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Milk&lt;&sol;li&gt; <br>
+                            &lt;&sol;ul&gt;
+                        </td>
+                        <td>
+                            <ul type="none" style="padding-left: 30px;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
 
         </div>
     </div>
