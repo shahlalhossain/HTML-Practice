@@ -39,9 +39,17 @@
 
 
     <!--Page Specific Custom CSS Start-->
-    <!--<style type="text/css">-->
+    <style type="text/css">
+        .city {
+            background-color: darkseagreen;
+            color: black;
+            padding: 10px;
+        }
 
-    <!--</style>-->
+        .main {
+            text-align: center;
+        }
+    </style>
     <!--Page Specific Custom CSS End-->
 
 </head>
@@ -376,36 +384,36 @@
                             &lt;!DOCTYPE html&gt; <br>
                             &lt;html lang="en"&gt; <br>
                             &lt;head&gt; <br>
-                                &lt;title&gt;Page Title&lt;&sol;title&gt; <br>
-                                &lt;style&gt; <br>
-                                    .gadget { <br>
-                                        background-color: #dee4ec; <br>
-                                        color: green; <br>
-                                        border: 2px solid black; <br>
-                                        margin: 20px; <br>
-                                        padding: 20px; <br>
-                                    } <br>
+                            &lt;title&gt;Page Title&lt;&sol;title&gt; <br>
+                            &lt;style&gt; <br>
+                            .gadget { <br>
+                            background-color: #dee4ec; <br>
+                            color: green; <br>
+                            border: 2px solid black; <br>
+                            margin: 20px; <br>
+                            padding: 20px; <br>
+                            } <br>
 
-                                    .highlight { <br>
-                                        color: red; <br>
-                                    } <br>
-                                &lt;&sol;style&gt; <br>
+                            .highlight { <br>
+                            color: red; <br>
+                            } <br>
+                            &lt;&sol;style&gt; <br>
                             &lt;&sol;head&gt; <br>
                             &lt;body&gt; <br>
 
                             &lt;div class="gadget"&gt; <br>
-                                &lt;h2&gt;The &lt;span class="highlight"&gt;Computer&lt;&sol;span&gt;&lt;&sol;h2&gt; <br>
-                                &lt;p&gt;A computer is an electronic device which is very important and useful for us.&lt;&sol;p&gt; <br>
+                            &lt;h2&gt;The &lt;span class="highlight"&gt;Computer&lt;&sol;span&gt;&lt;&sol;h2&gt; <br>
+                            &lt;p&gt;A computer is an electronic device which is very important and useful for us.&lt;&sol;p&gt; <br>
                             &lt;&sol;div&gt; <br>
 
                             &lt;div class="gadget"&gt; <br>
-                                &lt;h2&gt;The &lt;span class="highlight"&gt;Mobile&lt;&sol;span&gt;&lt;&sol;h2&gt; <br>
-                                &lt;p&gt;Mobile phones are also known as cell phones or mobile.&lt;&sol;p&gt; <br>
+                            &lt;h2&gt;The &lt;span class="highlight"&gt;Mobile&lt;&sol;span&gt;&lt;&sol;h2&gt; <br>
+                            &lt;p&gt;Mobile phones are also known as cell phones or mobile.&lt;&sol;p&gt; <br>
                             &lt;&sol;div&gt; <br>
 
                             &lt;div class="gadget"&gt; <br>
-                                &lt;h2&gt;The &lt;span&gt;Internet&lt;&sol;span&gt;&lt;&sol;h2&gt; <br>
-                                &lt;p&gt;Internet is one of the most important things for a person in today’s world.&lt;&sol;p&gt; <br>
+                            &lt;h2&gt;The &lt;span&gt;Internet&lt;&sol;span&gt;&lt;&sol;h2&gt; <br>
+                            &lt;p&gt;Internet is one of the most important things for a person in today’s world.&lt;&sol;p&gt; <br>
                             &lt;&sol;div&gt; <br>
 
                             &lt;&sol;body&gt; <br>
@@ -453,9 +461,71 @@
                     </tr>
                     </tbody>
                 </table>
+                <p><b>Note: </b>The <span class="codespan">class</span> attribute can be used on any HTML element. The class name is case sensitive.</p>
             </div>
+            <br><br>
+
+            <div class="section_two">
+                <h3>Multiple Classes</h3>
+                <p>
+                    HTML elements can belong to more than one class. <br>
+                    To define multiple classes, separate the class names with a space, e.g. &lt;div class="city main"&gt;. The element will be styled according to all the classes specified. <br>
+                    In the following example, the first <span class="codespan">&lt;h2&gt;</span> element belongs to both the <span class="codespan">city</span> class and also to the <span class="codespan">main</span> class, and will get the CSS styles from both of the classes:
+                </p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th style="width: 40%">Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><strong><i>CSS Code</i></strong></td>
+                        <td rowspan="4">
+                            <h2 class="city main">London</h2>
+                            <p>London is the capital of England. It is also the city with the highest population in the UK. The population is just under 9 million. The city is the largest in western Europe by population and area.</p> <br>
+
+                            <h2 class="city">Paris</h2>
+                            <p>Paris is the capital of France. It has long been one of western Europe's major centers of culture and business. Some of the world's greatest artists, writers, scholars, fashion designers, and chefs have lived in Paris. The city is also famous for its beauty.</p> <br>
+
+                            <h2 class="city">Tokyo</h2>
+                            <p>Tokyo is the capital of Japan. It is on the island of Honshu in the region of Kanto. Tokyo is the center of the Japanese government. The Imperial Palace is in Tokyo, it's not actually public for tourist. Tokyo is the center of business, trade, and industry of Japan. The city is the center of the largest metropolitan area in the world.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lt;style&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;.city { <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background-color: darkseagreen; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: black; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding: 10px; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; } <br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;.main { <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align: center; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; } <br>
+                            &lt;&sol;style&gt;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong><i>HTML Code</i></strong></td>
+                    <tr>
+                        <td>
+                            &lt;h2 class="city main">London&lt;&sol;h2&gt; <br>
+                            &lt;h2 class="city">Paris&lt;&sol;h2&gt; <br>
+                            &lt;h2 class="city">Tokyo&lt;&sol;h2&gt;
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
         </div>
     </div>
+
+
 </div>
 <!--Main Section End-->
 
