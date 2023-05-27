@@ -353,7 +353,119 @@
             </div>
         </div>
         <div class="container">
+            <div class="section_one">
+                <h3>HTML JavaScript</h3>
+                <p>
+                    JavaScript makes HTML pages more dynamic and interactive. <br>
+                    JavaScript is the world's most popular programming language. <br>
+                    JavaScript is the programming language of the Web and it is very easy to learn. <br>
+                    There are three ways to use JavaScript Code to make the HTML more dynamic & interactive. They are:
+                </p>
+                <ul style="padding-left: 30px;">
+                    <li>Inline JavaScript</li>
+                    <li>Internal JavaScript</li>
+                    <li>External JavaScript</li>
+                </ul>
 
+                <table>
+                    <thead>
+                    <tr>
+                        <th style="width: 33.33%">Inline JavaScript</th>
+                        <th style="width: 33.33%">Internal JavaScript</th>
+                        <th style="width: 33.33%">External JavaScript</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;!DOCTYPE html&gt; <br>
+                            &lt;html&gt; <br>
+                            &lt;body&gt; <br>
+
+                            &lt;button type="button" <span class="codespan">onclick="document.getElementById('dateTime').innerHTML = Date()"&gt;</span>
+                                Display Date & Time. <br>
+                            &lt;&sol;button&gt; <br>
+
+                            &lt;p id="dateTime"&gt;&lt;&sol;p&gt; <br>
+
+                            &lt;&sol;body&gt; <br>
+                            &lt;&sol;html&gt;
+                        </td>
+                        <td>
+                            &lt;!DOCTYPE html&gt; <br>
+                            &lt;html&gt; <br>
+                            &lt;body&gt; <br>
+
+                            &lt;p id="greetings"&gt;&lt;&sol;p&gt; <br>
+
+                            <span class="codespan">
+                            &lt;script&gt; <br>
+                                document.getElementById("greetings").innerHTML = "Hello JavaScript"; <br>
+                            &lt;&sol;script&gt;
+                            </span> <br>
+
+                            &lt;&sol;body&gt; <br>
+                            &lt;&sol;html&gt;
+                        </td>
+                        <td>
+                            &lt;!DOCTYPE html&gt; <br>
+                            &lt;html&gt; <br>
+                            &lt;body&gt; <br>
+
+                            &lt;h1 id="welcome"&gt;&lt;&sol;h1&gt; <br>
+
+                            <span class="codespan">&lt;script type="text&sol;javascript" src="js&sol;myjs.js"&gt;&lt;&sol;script&gt; </span> <br>
+
+                            &lt;&sol;body&gt; <br>
+                            &lt;&sol;html&gt;
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_two">
+                <h3>The HTML <span class="codespan">&lt;script&gt;</span> Tag</h3>
+                <p>
+                    The HTML <span class="codespan">&lt;script&gt;</span> tag is used to define a client-side script (JavaScript). <br>
+                The <span class="codespan">&lt;script&gt;</span> element either contains script statements, or it points to an external script file through the <span class="codespan">src</span> attribute. <br>
+                Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content. <br>
+                To select an HTML element, JavaScript most often uses the <span class="codespan">document.getElementById()</span> method. <br>
+                This JavaScript example writes "Hello JavaScript!" into an HTML element with id="helloJS":
+                </p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th style="width: 50%;">Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;!DOCTYPE html&gt; <br>
+                            &lt;html&gt; <br>
+                            &lt;body&gt; <br>
+
+                            &lt;h1 id="helloJS"&gt;&lt;&sol;h1&gt; <br>
+
+                            &lt;script&gt; <br>
+                                document.getElementById("helloJS").innerHTML = "Hello JavaScript"; <br>
+                            &lt;&sol;script&gt; <br>
+
+                            &lt;&sol;body&gt; <br>
+                            &lt;&sol;html&gt;
+                        </td>
+                        <td>
+                            <h1>Hello JavaScript</h1>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
         </div>
     </div>
 </div>
