@@ -39,9 +39,14 @@
 
 
     <!--Page Specific Custom CSS Start-->
-    <!--<style type="text/css">-->
-
-    <!--</style>-->
+    <style type="text/css">
+        #myHeader {
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
     <!--Page Specific Custom CSS End-->
 
 </head>
@@ -353,7 +358,58 @@
             </div>
         </div>
         <div class="container">
+            <div class="section_one">
+                <h3>HTML id Attribute</h3>
+                <p>
+                    The HTML id attribute is used to specify a unique id for an HTML element. <br>
+                    It is not possible to have more than one element with the same id in an HTML document. <br>
+                    The <span class="codespan">id</span> attribute specifies a unique id for an HTML element. The value of the <span class="codespan">id</span> attribute must be unique within the HTML document. <br>
+                    The <span class="codespan">id</span> attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id. <br>
+                    The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}. <br>
+                    In the following example we have an <span class="codespan">&lt;h1&gt;</span> element that points to the id name "myHeader". This <span class="codespan">&lt;h1&gt;</span> element will be styled according to the <span class="codespan">#myHeader</span> style definition in the head section:
+                </p>
 
+                <table>
+                    <thead>
+                    <tr>
+                        <th style="width: 40%;">Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><strong><i>CSS Code</i></strong></td>
+                        <td rowspan="4">
+                            <h2 id="myHeader">My Header</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lt;style&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;#myHeader { <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background-color: lightblue; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: black; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding: 40px; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align: center; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; } <br>
+                            &lt;&sol;style&gt;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong><i>HTML Code</i></strong></td>
+                    <tr>
+                        <td>
+                            &lt;h2 id="myHeader">My Header&lt;&sol;h2&gt;
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <strong>Note 1: </strong>The id name is case sensitive. <br>
+                    <strong>Note 1: </strong> The id name must contain at least one character, cannot start with a number, and must not contain whitespaces (spaces, tabs, etc.).
+                </p>
+            </div>
+            <br><br>
         </div>
     </div>
 </div>
