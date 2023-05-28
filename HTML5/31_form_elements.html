@@ -128,7 +128,6 @@
                     <span class="item">HTML CSS</span>
                 </a>
             </li>
-
             <li>
                 <a href="13_links.html">
                     <span class="icon"><i class="fas fa-code"></i></span>
@@ -353,7 +352,440 @@
             </div>
         </div>
         <div class="container">
+            <div class="section_one">
+                <h3>HTML Form Elements</h3>
+                <p>
+                    An HTML form is a section of a document which contains controls such as text fields, password fields, checkboxes, radio buttons, submit button etc.<br>
+                    An HTML form facilitates the user to enter data that is to be sent to the server for processing such as name, email address, password, phone number etc. <br>
+                    The HTML <span class="codespan">&lt;form&gt;</span> element can contain one or more of the following form elements:
+                </p>
+                <ul style="padding-left: 30px;">
+                    <li><span class="codespan">&lt;label&gt;</span> - It defines a label for an input element.</li>
+                    <li><span class="codespan">&lt;input&gt;</span> - It defines an input control.</li>
+                    <li><span class="codespan">&lt;select&gt;</span> - It defines a drop-down list.</li>
+                    <li><span class="codespan">&lt;option&gt;</span> - It defines an option in a drop-down list.</li>
+                    <li><span class="codespan">&lt;optgroup&gt;</span> - It defines a group of related options in a drop-down list.</li>
+                    <li><span class="codespan">&lt;textarea&gt;</span> - It defines a multi-line input control.</li>
+                    <li><span class="codespan">&lt;button&gt;</span> - It defines a clickable button.</li>
+                    <li><span class="codespan">&lt;fieldset&gt;</span> - It groups the related element in a form.</li>
+                    <li><span class="codespan">&lt;legend&gt;</span> - It defines a caption for a &lt;fieldset&gt; element.</li>
+                    <li><span class="codespan">&lt;datalist&gt;</span> - It specifies a list of pre-defined options for input control.</li>
+                    <li><span class="codespan">&lt;output&gt;</span> - It defines the result of a calculation.</li>
+                    <li><span class="codespan">&lt;keygen&gt;</span> - It defines a key-pair generator field for forms.</li>
+                </ul>
+            </div>
+            <br><br>
 
+            <div class="section_two">
+                <h3>The &lt;label&gt; Element</h3>
+                <p>
+                    The <span class="codespan">&lt;label&gt;</span> element defines a label for several form elements.<br>
+                    The <span class="codespan">&lt;label&gt;</span> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.<br>
+                    The <span class="codespan">&lt;label&gt;</span> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <span class="codespan">&lt;label&gt;</span> element, it toggles the radio button/checkbox.<br>
+                    The for attribute of the <span class="codespan">&lt;label&gt;</span> tag should be equal to the id attribute of the <span class="codespan">&lt;input&gt;</span> element to bind them together.
+                </p>
+
+                <h4>Example of &lt;label&gt; Element</h4>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;label for="name">Name:&lt;&sol;label&gt;<br>
+                            &lt;input type="text" id="name" name="name"&gt;
+                        </td>
+                        <td>
+                            <div style="padding-left: 50px; padding-top: 20px; padding-bottom: 20px; border: 1px solid blue; border-radius: 5px;">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name">
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_three">
+                <h3>The &lt;input&gt; Element</h3>
+                <p>
+                    One of the most used form element is the <span class="codespan">&lt;input&gt;</span> element. <br>
+                    The <span class="codespan">&lt;input&gt;</span> element can be displayed in several ways, depending on the type attribute.
+                </p>
+
+                <h4>Example of &lt;input&gt; Element</h4>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;label for="mobile">Mobile:&lt;&sol;label&gt;<br>
+                            &lt;input type="text" id="mobile" name="mobile"&gt;
+                        </td>
+                        <td>
+                            <div style="padding-left: 50px; padding-top: 20px; padding-bottom: 20px; border: 1px solid blue; border-radius: 5px;">
+                                <label for="mobile">Mobile</label>
+                                <input type="text" id="mobile" name="mobile">
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_four">
+                <h3>The &lt;select&gt; and &lt;option&gt; Elements</h3>
+                <p>
+                    <span class="codespan">&lt;select&gt;</span>
+                    The <span class="codespan">&lt;select&gt;</span> element defines a drop-down list: <br>
+                    The <span class="codespan">&lt;option&gt;</span> elements defines an option that can be selected. <br>
+                    By default, the first item in the drop-down list is selected. <br>
+                </p>
+
+                <h4>Example of &lt;select&gt; and &lt;option&gt; Elements</h4>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;label for="cars"&gt;Choose A Car:&lt;&sol;label&gt;<br>
+                            &lt;select id="cars" name="cars"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="volvo"&gt;Volvo&lt;&sol;option&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="saab"&gt;Saab&lt;&sol;option&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="fiat"&gt;Fiat&lt;&sol;option&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="audi"&gt;Audi&lt;&sol;option&gt;<br>
+                            &lt;&sol;select&gt;
+                        </td>
+                        <td>
+                            <label for="cars">Choose A Car:</label>
+                            <select id="cars" name="cars" style="padding: 5px; margin-left: 5px; font-size: 16px;">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="fiat">Fiat</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><strong><i> To define a pre-selected option, add the selected attribute to the option. </i></strong></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lt;label for="cars"&gt;Choose A Car:&lt;&sol;label&gt;<br>
+                            &lt;select id="cars" name="cars"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="volvo"&gt;Volvo&lt;&sol;option&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="saab"&gt;Saab&lt;&sol;option&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="fiat" selected&gt;Fiat&lt;&sol;option&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="audi"&gt;Audi&lt;&sol;option&gt;<br>
+                            &lt;&sol;select&gt;
+                        </td>
+                        <td>
+                            <label for="cars1">Choose A Car:</label>
+                            <select id="cars1" name="cars" style="padding: 5px; margin-left: 5px; font-size: 16px;">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="fiat" selected>Fiat</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong><i>Use the <span class="codespan">size</span> attribute to specify the number of visible values.</i></strong></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lt;label for="cars"&gt;Choose A Car:&lt;&sol;label&gt;<br>
+                            &lt;select id="cars" name="cars" size="3"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="volvo"&gt;Volvo&lt;&sol;option&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="saab"&gt;Saab&lt;&sol;option&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="fiat" selected&gt;Fiat&lt;&sol;option&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="audi"&gt;Audi&lt;&sol;option&gt;<br>
+                            &lt;&sol;select&gt;
+                        </td>
+                        <td>
+                            <label for="cars2">Choose A Car:</label>
+                            <select id="cars2" name="cars" size="3" style="padding: 5px; margin-left: 5px; font-size: 16px;">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="fiat">Fiat</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong><i>Use the <span class="codespan">multiple</span> attribute to allow the user to select more than one value.</i></strong></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lt;label for="cars"&gt;Choose A Car:&lt;&sol;label&gt;<br>
+                            &lt;select id="cars" name="cars" size="4" multiple&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="volvo"&gt;Volvo&lt;&sol;option&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="saab"&gt;Saab&lt;&sol;option&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="fiat" selected&gt;Fiat&lt;&sol;option&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="audi"&gt;Audi&lt;&sol;option&gt;<br>
+                            &lt;&sol;select&gt;
+                        </td>
+                        <td>
+                            <label for="cars3">Choose A Car:</label>
+                            <select id="cars3" name="cars" size="4" multiple style="padding: 5px; margin-left: 5px; font-size: 16px;">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="fiat">Fiat</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_five">
+                <h3>The &lt;textarea&gt; Element</h3>
+                <p>
+                    The <span class="codespan">&lt;textarea&gt;</span> element defines a multi-line input field (a text area). <br>
+                    The <span class="codespan">rows</span> attribute specifies the visible number of lines in a text area. <br>
+                    The <span class="codespan">cols</span> attribute specifies the visible width of a text area.
+                </p>
+
+                <h4>Example of &lt;textarea&gt; Element</h4>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;label for="message"&gt;Message:&lt;&sol;label&gt;<br>
+                            &lt;textarea id="message" name="message" rows="5" cols="80"&gt;&lt;&sol;textarea&gt;
+                        </td>
+                        <td>
+                            <label for="message">Message:</label><br>
+                            <textarea id="message" name="message" rows="5" cols="50"></textarea>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_six">
+                <h3>The &lt;button&gt; Element</h3>
+                <p>
+                    The <span class="codespan">&lt;button&gt;</span> element defines a clickable button. <br>
+                </p>
+
+                <h4>Example of &lt;button&gt; Element</h4>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;button type="button" onclick="alert('Hello World')">Click Me&lt;&sol;button&gt;
+                        </td>
+                        <td>
+                            <button type="button" onclick="alert('Hello World')" style="padding: 8px; font-size: 16px;">Click Me</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_seven">
+                <h3>The &lt;button&gt; Element</h3>
+                <p>
+                    The <span class="codespan">&lt;button&gt;</span> element defines a clickable button. <br>
+                </p>
+
+                <h4>Example of &lt;button&gt; Element</h4>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;button type="button" onclick="alert('Hello World')">Click Me&lt;&sol;button&gt;
+                        </td>
+                        <td>
+                            <button type="button" onclick="alert('Hello World')" style="padding: 8px; font-size: 16px;">Click Me</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p><strong>Note: </strong>Always specify the <span class="codespan">type</span> attribute for the button element. Different browsers may use different default types for the button element. </p>
+            </div>
+            <br><br>
+
+            <div class="section_eight">
+                <h3>The &lt;fieldset&gt; and &lt;legend&gt; Elements</h3>
+                <p>
+                    The <span class="codespan">&lt;fieldset&gt;</span> element is used to group related data in a form.<br>
+                    The <span class="codespan">&lt;legend&gt;</span> element defines a caption for the <span class="codespan">&lt;fieldset&gt;</span> element.
+                </p>
+
+                <h4>Example of &lt;fieldset&gt; and &lt;legend&gt; Elements</h4>
+                <table>
+                    <thead>
+                    <tr>
+                        <th style="width: 75%;">Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;fieldset&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;legend&gt;Personal Information&lt;&sol;legend&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;form action="save.php" method="POST"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="username"&gt;Name:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="username" name="username" value="" placeholder="Enter Your Name"&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="usermobile"&gt;Mobile:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="usermobile" name="usermobile" value="" placeholder="Enter Your Mobile"&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="useremail"&gt;Email:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="useremail" name="useremail" value="" placeholder="Enter Your Email"&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="submit" value="Submit" style="font-size: 16px; padding: 5px; float: right"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;&sol;form&gt;<br>
+                            &lt;&sol;fieldset&gt;
+                        </td>
+                        <td>
+                            <fieldset>
+                                <legend>Personal Information</legend>
+                                <form action="save.php" method="POST">
+                                    <label for="username">Name:</label>
+                                    <input type="text" id="username" name="username" value="" placeholder="Enter Your Name"><br>
+
+                                    <label for="usermobile">Mobile:</label>
+                                    <input type="text" id="usermobile" name="usermobile" value="" placeholder="Enter Your Mobile"><br>
+
+                                    <label for="useremail">Email:</label>
+                                    <input type="text" id="useremail" name="useremail" value="" placeholder="Enter Your Email"><br>
+
+                                    <input type="submit" value="Submit" style="font-size: 16px; padding: 5px; float: right">
+                                </form>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_nine">
+                <h3>The &lt;datalist&gt; Element</h3>
+                <p>
+                    The <span class="codespan">&lt;datalist&gt;</span> element specifies a list of pre-defined options for an <span class="codespan">&lt;input&gt;</span> element.<br>
+                    Users will see a drop-down list of the pre-defined options as they input data. <br>
+                    The <span class="codespan">list</span> attribute of the <span class="codespan">&lt;input&gt;</span> element, must refer to the <span class="codespan">id</span> attribute of the <span class="codespan">&lt;datalist&gt;</span> element.
+                </p>
+
+                <h4>Example of &lt;button&gt; Element</h4>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;label for="browser"&gt;Select Favorite Browser&lt;&sol;label&gt;<br>
+                            &lt;input list="browsers" id="browser"&gt;<br>
+                            &lt;datalist id="browsers"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="Internet Explorer"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="Firefox"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="Chrome"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="Opera"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="Safari"&gt;<br>
+                            &lt;&sol;datalist&gt;
+                        </td>
+                        <td>
+                            <label for="browser">Select Favorite Browser</label><br>
+                            <input list="browsers" id="browser">
+                            <datalist id="browsers">
+                                <option value="Internet Explorer">
+                                <option value="Firefox">
+                                <option value="Chrome">
+                                <option value="Opera">
+                                <option value="Safari">
+                            </datalist>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_ten">
+                <h3>The &lt;output&gt; Element</h3>
+                <p>
+                    The <span class="codespan">&lt;output&gt;</span> element represents the result of a calculation (like one performed by a script).<br>
+                </p>
+
+                <h4>Example of &lt;button&gt; Element</h4>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;form action="save.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; 0 &lt;input type="range"  id="a" name="a" value="50"&gt; 100<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; + &lt;input type="number" id="b" name="b" value="50"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; = &lt;output name="x" for="a b"&gt;&lt;&sol;output&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="submit" value="Submit"&gt;<br>
+                            &lt;&sol;form&gt;
+                        </td>
+                        <td>
+                            <form action="save.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                                0 <input type="range"  id="a" name="a" value="50"> 100
+                                + <input type="number" id="b" name="b" value="50">
+                                = <output name="x" for="a b"></output>
+                                <br>
+                                <input type="submit" value="Submit" style="padding: 5px; font-size: 16px; float: right;">
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
         </div>
     </div>
 </div>

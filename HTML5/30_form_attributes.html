@@ -377,26 +377,60 @@
                     Usually, the form data is sent to a file on the server when the user clicks on the submit button.<br>
                     In the example below, the form data is sent to a file called "save.php". This file contains a server-side script that handles the form data:
                 </p>
-                <div class="bluebox">
-                    &lt;form action="save.php"&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="name"&gt;Name:&lt;&sol;label&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="name" name="name" value="" placeholder="Enter Name"&gt;<br>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;form action="save.php"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="name"&gt;Name:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="name" name="name" value="" placeholder="Enter Name"&gt;<br>
 
-                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="mobile"&gt;Mobile:&lt;&sol;label&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="mobile" name="mobile" value="" placeholder="Enter Mobile"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="mobile"&gt;Mobile:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="mobile" name="mobile" value="" placeholder="Enter Mobile"&gt;<br>
 
-                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="email"&gt;Email:&lt;&sol;label&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="email" name="email" value="" placeholder="Enter Email"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="email"&gt;Email:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="email" name="email" value="" placeholder="Enter Email"&gt;<br>
 
-                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="subject"&gt;Subject:&lt;&sol;label&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="subject" name="subject" value="" placeholder="Enter Subject"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="subject"&gt;Subject:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="subject" name="subject" value="" placeholder="Enter Subject"&gt;<br>
 
-                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="message"&gt;Message:&lt;&sol;label&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;textarea id="message" name="message" placeholder="Enter Message"&gt;&lt;&sol;textarea&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="message"&gt;Message:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;textarea id="message" name="message" placeholder="Enter Message"&gt;&lt;&sol;textarea&gt;<br>
 
-                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="submit" value="Submit"&gt;<br>
-                    &lt;&sol;form&gt;
-                </div>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="submit" value="Submit"&gt;<br>
+                            &lt;&sol;form&gt;
+                        </td>
+                        <td>
+                            <div style="padding-left: 50px; padding-top: 20px; padding-bottom: 20px; border: 1px solid blue; border-radius: 5px;">
+                                <form action="#">
+                                    <label for="name">Name:</label><br>
+                                    <input type="text" id="name" name="name" value="" placeholder="Enter Name"><br>
+
+                                    <label for="mobile">Mobile:</label><br>
+                                    <input type="text" id="mobile" name="mobile" value="" placeholder="Enter Mobile"><br>
+
+                                    <label for="email">Email:</label><br>
+                                    <input type="text" id="email" name="email" value="" placeholder="Enter Email"><br>
+
+                                    <label for="subject">Subject:</label><br>
+                                    <input type="text" id="subject" name="subject" value="" placeholder="Enter Subject"><br>
+
+                                    <label for="message">Message:</label><br>
+                                    <textarea id="message" name="message" placeholder="Enter Message"></textarea><br>
+
+                                    <input type="submit" value="Submit" style="padding: 5px; width: 80px;">
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
                 <p><strong>Note:</strong>If the action attribute is omitted, the action is set to the current page.</p>
             </div>
             <br><br>
@@ -517,7 +551,7 @@
             </div>
             <br><br>
 
-            <div class="section_six">
+            <div class="section_seven">
                 <h3>HTML Form <span class="codespan">novalidate</span> Attribute</h3>
                 <p>
                     The <span class="codespan">novalidate</span> attribute is a boolean attribute.<br>
