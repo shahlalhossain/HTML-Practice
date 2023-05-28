@@ -196,6 +196,11 @@ hr {
     border-top: 1px solid #dddddd;
 }
 
+.bluebox {
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 5px;
+}
 
 @media (max-width: 768px) {
     .wrapper .sidebar { display: none; }
