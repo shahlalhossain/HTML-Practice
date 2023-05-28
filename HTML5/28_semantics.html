@@ -128,7 +128,6 @@
                     <span class="item">HTML CSS</span>
                 </a>
             </li>
-
             <li>
                 <a href="13_links.html">
                     <span class="icon"><i class="fas fa-code"></i></span>
@@ -353,7 +352,318 @@
             </div>
         </div>
         <div class="container">
+            <div class="section_one">
+                <h3>HTML Semantic Elements</h3>
+                <p>
+                    Semantic elements = elements with a meaning. <br>
+                    A semantic element clearly describes its meaning to both the browser and the developer. <br>
+                    Examples of non-semantic elements: <span class="codespan">&lt;div&gt;</span> and <span class="codespan">&lt;span&gt;</span> - Tells nothing about its content. <br>
+                    Examples of semantic elements: <span class="codespan">&lt;form&gt;</span>, <span class="codespan">&lt;table&gt;</span>, and <span class="codespan">&lt;article&gt;</span> - Clearly defines its content. <br>
+                    Many web sites contain HTML code like: &lt;div id="nav"&gt;, &lt;div class="header"&gt;, &lt;div id="footer"&gt; to indicate navigation, header and footer. <br>
+                    <br>
+                    In HTML there are some semantic elements that can be used to define different parts of a web page
+                </p>
 
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Tag Name</th>
+                        <th>Description</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr><td><span class="codespan">&lt;article&gt;</span></td><td>Defines independent, self-contained content</td></tr>
+                    <tr><td><span class="codespan">&lt;aside&gt;</span></td><td>Defines content aside from the page content</td></tr>
+                    <tr><td><span class="codespan">&lt;details&gt;</span></td><td>Defines additional details that the user can view or hide</td></tr>
+                    <tr><td><span class="codespan">&lt;figcaption&gt;</span></td><td>Defines a caption for a &lt;figure&gt; element</td></tr>
+                    <tr><td><span class="codespan">&lt;figure&gt;</span></td><td>Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</td></tr>
+                    <tr><td><span class="codespan">&lt;footer&gt;</span></td><td>Defines a footer for a document or section</td></tr>
+                    <tr><td><span class="codespan">&lt;header&gt;</span></td><td>Specifies a header for a document or section</td></tr>
+                    <tr><td><span class="codespan">&lt;main&gt;</span></td><td>Specifies the main content of a document</td></tr>
+                    <tr><td><span class="codespan">&lt;mark&gt;</span></td><td>Defines marked/highlighted text</td></tr>
+                    <tr><td><span class="codespan">&lt;nav&gt;</span></td><td>Defines navigation links</td></tr>
+                    <tr><td><span class="codespan">&lt;section&gt;</span></td><td>Defines a section in a document</td></tr>
+                    <tr><td><span class="codespan">&lt;summary&gt;</span></td><td>Defines a visible heading for a &lt;details&gt; element</td></tr>
+                    <tr><td><span class="codespan">&lt;time&gt;</span></td><td>Defines a date/time</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_two">
+                <h3>HTML <span class="codespan">&lt;section&gt;</span> Elements</h3>
+                <p>
+                    The <span class="codespan">&lt;section&gt;</span> element defines a section in a document. <br>
+                    A section is a thematic grouping of content, typically with a heading. <br>
+                    Examples of where a <span class="codespan">&lt;section&gt;</span> element can be used.
+                </p>
+                <ul style="padding-left: 30px;">
+                    <li>Chapters</li>
+                    <li>Introduction</li>
+                    <li>News Items</li>
+                    <li>Contact Information</li>
+                </ul>
+
+                <p>A web page could normally be split into sections for introduction, content, and contact information.</p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;section&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;h2&gt;News Title One&lt;&sol;h2&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;News Content of Title One&lt;&sol;p&gt;<br>
+                            &lt;&sol;section&gt;<br><br>
+
+                            &lt;section&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;h2&gt;News Title Two&lt;&sol;h2&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;News Content of Title Two&lt;&sol;p&gt;<br>
+                            &lt;&sol;section&gt;
+                        </td>
+                        <td>
+                            <section>
+                                <h2>News Title One</h2>
+                                <p>News Content of Title One</p>
+                            </section>
+                            <br>
+                            <section>
+                                <h2>News Title Two</h2>
+                                <p>News Content of Title Two</p>
+                            </section>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div style="border: 1px solid blue; border-radius: 5px; padding: 10px;">
+
+                </div>
+
+            </div>
+            <br><br>
+
+            <div class="section_three">
+                <h3>HTML <span class="codespan">&lt;article&gt;</span> Element</h3>
+                <p>
+                    The <span class="codespan">&lt;article&gt;</span> element specifies independent, self-contained content. <br>
+                    An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site. <br>
+                    Examples of where the <span class="codespan">&lt;article&gt;</span> element can be used.
+                </p>
+                <ul style="padding-left: 30px;">
+                    <li>Blog Posts</li>
+                    <li>Forum Posts</li>
+                    <li>User Comments</li>
+                    <li>Product Cards</li>
+                    <li>Newspaper Articles</li>
+                </ul>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;article&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;h2&gt;Google Chrome&lt;&sol;h2&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Google Chrome is a web browser developed by Google...&lt;&sol;p&gt;<br>
+                            &lt;&sol;article&gt;<br><br>
+
+                            &lt;article&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;h2&gt;Mozilla Firefox&lt;&sol;h2&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Mozilla Firefox is an open-source web browser developed by Mozilla...&lt;&sol;p&gt;<br>
+                            &lt;&sol;article&gt;<br><br>
+
+                            &lt;article&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;h2&gt;Microsoft Edge&lt;&sol;h2&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Microsoft Edge is a web browser developed by Microsoft...&lt;&sol;p&gt;<br>
+                            &lt;&sol;article&gt;
+                        </td>
+                        <td>
+                            <article>
+                                <h2>Google Chrome</h2>
+                                <p>Google Chrome is a web browser developed by Google, released in 2008. <br>Chrome is the world's most popular web browser today!</p>
+                            </article>
+                            <br><br>
+
+                            <article>
+                                <h2>Mozilla Firefox</h2>
+                                <p>Mozilla Firefox is an open-source web browser developed by Mozilla. <br>Firefox has been the second most popular web browser since January, 2018.</p>
+                            </article>
+                            <br><br>
+
+                            <article>
+                                <h2>Microsoft Edge</h2>
+                                <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. <br>Microsoft Edge replaced Internet Explorer.</p>
+                            </article>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_four">
+                <h3>Nesting <span class="codespan">&lt;article&gt;</span> in <span class="codespan">&lt;section&gt;</span> or Vice Versa</h3>
+                <p>
+                    The <span class="codespan">&lt;article&gt;</span> element specifies independent, self-contained content. <br>
+                    The <span class="codespan">&lt;section&gt;</span> element defines section in a document. <br>
+                    So, HTML pages with <span class="codespan">&lt;section&gt;</span> elements containing <span class="codespan">&lt;article&gt;</span> elements, and <span class="codespan">&lt;article&gt;</span> elements containing <span class="codespan">&lt;section&gt;</span> elements.
+                </p>
+            </div>
+            <br><br>
+
+            <div class="section_five">
+                <h3>HTML <span class="codespan">&lt;header&gt;</span> Element</h3>
+                <p>
+                    The <span class="codespan">&lt;header&gt;</span> element represents a container for introductory content or a set of navigational links. <br>
+                    A <span class="codespan">&lt;header&gt;</span> element typically contains:
+                </p>
+                <ul style="padding-left: 30px;">
+                    <li>One or more Heading Elements (&lt;h1&gt; - &lt;h6&gt;)</li>
+                    <li>Logo or Icon</li>
+                    <li>Authorship Information</li>
+                </ul>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th style="width: 40%;">Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;article&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;header&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2&gt;Google Chrome&lt;&sol;h2&gt;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>&lt;p&gt;Date: 2023-05-30 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Written By: Shahlal &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Read By: 1635&lt;&sol;p&gt;</i><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;&sol;header&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Google Chrome is a web browser developed by Google...&lt;&sol;p&gt;<br>
+                            &lt;&sol;article&gt;<br><br>
+                        </td>
+                        <td>
+                            <article style="padding: 15px;">
+                                <header>
+                                    <h2>Google Chrome</h2>
+                                    <div style="float:left;width:33.33%; color: blue; text-align: left;">
+                                        <i>Date: 2023-05-20</i>
+                                    </div>
+                                    <div style="float:left; width:33.33%; color: blue; text-align: center;">
+                                        <i>Written By: Shahlal Hossain</i>
+                                    </div>
+                                    <div style="float:left;width:33.33%; color: blue; text-align: right;">
+                                        <i>Read By: 1635</i>
+                                    </div>
+                                </header>
+                                <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today. Google Chrome is a cross-platform web browser developed by Google. It was first released in 2008 for Microsoft Windows, built with free software components from Apple WebKit and Mozilla Firefox. Versions were later released for Linux, macOS, iOS, and also for Android, where it is the default browser.</p>
+                            </article>
+                            <br>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p><strong>Note: </strong>One can have several <span class="codespan">&lt;header&gt;</span> elements in one HTML document. However, <span class="codespan">&lt;header&gt;</span> cannot be placed within a <span class="codespan">&lt;footer&gt;</span>, <span class="codespan">&lt;address&gt;</span> or another <span class="codespan">&lt;header&gt;</span> element.</p>
+            </div>
+            <br><br>
+
+            <div class="section_six">
+                <h3>HTML <span class="codespan">&lt;footer&gt;</span> Element</h3>
+                <p>
+                    The <span class="codespan">&lt;footer&gt;</span> element defines a footer for a document or section.<br>
+                    A <span class="codespan">&lt;footer&gt;</span> element typically contains:
+                </p>
+                <ul style="padding-left: 30px;">
+                    <li>Authorship Information</li>
+                    <li>Copyright Information</li>
+                    <li>Contact Information</li>
+                    <li>Site Map</li>
+                    <li>Back-to-Top Links</li>
+                    <li>Related Documents</li>
+                </ul>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th style="width: 60%;">Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;footer&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Author: Shahlal Hossain&lt;&sol;p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;&lt;a href="mailto:shahlalhossain@gmail.com">shahlalhossain@gmail.com&lt;&sol;a>&lt;&sol;p&gt;<br>
+                            &lt;&sol;footer&gt;
+                        </td>
+                        <td>
+                            <footer>
+                                <p>Author: Shahlal Hossain</p>
+                                <p><a href="mailto:shahlalhossain@gmail.com">shahlalhossain@gmail.com</a></p>
+                            </footer>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p><strong>Note: </strong>One can have several <span class="codespan">&lt;footer&gt;</span> elements in one HTML document.</p>
+            </div>
+            <br><br>
+
+            <div class="section_seven">
+                <h3>HTML <span class="codespan">&lt;nav&gt;</span> Element</h3>
+                <p>
+                    The <span class="codespan">&lt;nav&gt;</span> element defines a set of navigation links.
+                </p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th style="width: 50%;">Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;nav&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#"&gt;HTML&lt;&sol;a&gt; |<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#"&gt;CSS&lt;&sol;a&gt; |<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#"&gt;Bootstrap&lt;&sol;a&gt; |<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#"&gt;JavaScript&lt;&sol;a&gt; |<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#"&gt;jQuery&lt;&sol;a&gt; |<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#"&gt;PHP&lt;&sol;a&gt; |<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#"&gt;MySQL&lt;&sol;a&gt; |<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#"&gt;Laravel&lt;&sol;a&gt;<br>
+                            &lt;&sol;nav&gt;
+                        </td>
+                        <td style="text-align: center;">
+                            <nav>
+                                <a href="#">HTML</a> |
+                                <a href="#">CSS</a> |
+                                <a href="#">Bootstrap</a> |
+                                <a href="#">JavaScript</a> |
+                                <a href="#">jQuery</a> |
+                                <a href="#">PHP</a> |
+                                <a href="#">MySQL</a> |
+                                <a href="#">Laravel</a>
+                            </nav>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p><strong>Note: </strong>One can have several <span class="codespan">&lt;footer&gt;</span> elements in one HTML document.</p>
+            </div>
+            <br><br>
         </div>
     </div>
 </div>
