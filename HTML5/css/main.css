@@ -200,6 +200,7 @@ hr {
     border: 1px solid blue;
     border-radius: 5px;
     padding: 5px;
+    background-color: gainsboro;
 }
 
 @media (max-width: 768px) {

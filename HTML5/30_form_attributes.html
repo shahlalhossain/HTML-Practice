@@ -128,7 +128,6 @@
                     <span class="item">HTML CSS</span>
                 </a>
             </li>
-
             <li>
                 <a href="13_links.html">
                     <span class="icon"><i class="fas fa-code"></i></span>
@@ -353,7 +352,183 @@
             </div>
         </div>
         <div class="container">
+            <div class="section_one">
+                <h3>HTML Form Attributes</h3>
+                <p>
+                    In HTML there are various attributes available for <span class="codespan">&lt;form&gt;</span> element.<br>
+                    Some are like as below:
+                </p>
+                <ul style="padding-left: 30px;">
+                    <li>Action</li>
+                    <li>Target</li>
+                    <li>Method</li>
+                    <li>Enctype</li>
+                    <li>Autocomplete</li>
+                    <li>Novalidate</li>
+                </ul>
+            </div>
+            <br>
+            <hr>
 
+            <div class="section_two">
+                <h3>HTML Form <span class="codespan">action</span> Attribute</h3>
+                <p>
+                    The <span class="codespan">action</span> attribute defines the action to be performed when the form is submitted.<br>
+                    Usually, the form data is sent to a file on the server when the user clicks on the submit button.<br>
+                    In the example below, the form data is sent to a file called "save.php". This file contains a server-side script that handles the form data:
+                </p>
+                <div class="bluebox">
+                    &lt;form action="save.php"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="name"&gt;Name:&lt;&sol;label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="name" name="name" value="" placeholder="Enter Name"&gt;<br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="mobile"&gt;Mobile:&lt;&sol;label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="mobile" name="mobile" value="" placeholder="Enter Mobile"&gt;<br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="email"&gt;Email:&lt;&sol;label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="email" name="email" value="" placeholder="Enter Email"&gt;<br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="subject"&gt;Subject:&lt;&sol;label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="subject" name="subject" value="" placeholder="Enter Subject"&gt;<br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="message"&gt;Message:&lt;&sol;label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;textarea id="message" name="message" placeholder="Enter Message"&gt;&lt;&sol;textarea&gt;<br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="submit" value="Submit"&gt;<br>
+                    &lt;&sol;form&gt;
+                </div>
+                <p><strong>Note:</strong>If the action attribute is omitted, the action is set to the current page.</p>
+            </div>
+            <br><br>
+
+            <div class="section_three">
+                <h3>HTML Form <span class="codespan">target</span> Attribute</h3>
+                <p>
+                    The <span class="codespan">target</span> attribute specifies where to display the response that is received after submitting the form.<br>
+                    The <span class="codespan">target</span> attribute can have one of the following values:
+                </p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Value</th>
+                        <th>Description</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr><td>_blank</td><td>The response is displayed in a new window or tab</td></tr>
+                    <tr><td>_self</td><td>The response is displayed in the current window</td></tr>
+                    <tr><td>_parent</td><td>The response is displayed in the parent frame</td></tr>
+                    <tr><td>_top</td><td>The response is displayed in the full body of the window</td></tr>
+                    <tr><td><i>framename</i></td><td>The response is displayed in a named iframe</td></tr>
+                    </tbody>
+                </table>
+                <p><strong>Note: </strong>The default value is <span class="codespan">_self</span> which means that the response will open in the current window.</p>
+                <br>
+
+                <div class="bluebox">
+                    &lt;form action="save.php" target="_self"&gt;<br>
+                    or <br>
+                    &lt;form action="save.php" target="_blank"&gt;<br>
+                    or <br>
+                    &lt;form action="save.php" target="_top"&gt;<br>
+                    or <br>
+                    &lt;form action="save.php" target="_parent"&gt;<br>
+                </div>
+                <p><strong>Note:</strong>If the action attribute is omitted, the action is set to the current page.</p>
+            </div>
+            <br><br>
+
+            <div class="section_four">
+                <h3>HTML Form <span class="codespan">Method</span> Attribute</h3>
+                <p>
+                    The <span class="codespan">Method</span> attribute specifies the HTTP method to be used when submitting the form data.<br>
+                    The form-data can be sent as URL variables (with <span class="codespan">method="get"</span>) or as HTTP post transaction (with <span class="codespan">method="post"</span>).<br>
+                    The default HTTP method when submitting form data is GET.
+                </p>
+
+                <p><strong>Note: </strong>The default value is <span class="codespan">_self</span> which means that the response will open in the current window.</p>
+                <br>
+
+                <h4>Example of GET</h4>
+                <div class="bluebox">
+                    &lt;form action="save.php" target="_blank" method="GET"&gt;<br>
+                </div>
+                <br>
+
+                <h4>Example of POST</h4>
+                <div class="bluebox">
+                    &lt;form action="save.php" target="_blank" method="POST"&gt;<br>
+                </div>
+                <br>
+
+                <table>
+                    <tbody>
+                    <tr>
+                        <td style="width: 50%;">
+                            <p><strong>Notes on GET:</strong></p>
+                            <ul style="padding-left: 30px;">
+                                <li>Appends the form data to the URL, in name/value pairs</li>
+                                <li>NEVER use GET to send sensitive data. (Submitted form data is visible in the URL)</li>
+                                <li>The length of a URL is limited (2048 Characters)</li>
+                                <li>Useful for form submissions where a user wants to bookmark the result</li>
+                                <li>GET is good for non-secure data, like query strings in Google</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p><strong>Notes on POST:</strong></p>
+                            <ul style="padding-left: 30px;">
+                                <li>Appends the form data inside the body of the HTTP request.</li>
+                                <li>Should use POST to send sensitive Data. (Submitted form data is not shown in the URL)</li>
+                                <li>POST has no size limitations, and can be used to send large amounts of data.</li>
+                                <li>POST is good for secure data</li>
+                                <li>Form submissions with POST cannot be bookmarked</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_five">
+                <h3>HTML Form <span class="codespan">autocomplete</span> Attribute</h3>
+                <p>
+                    The <span class="codespan">autocomplete</span> attribute specifies whether a form should have autocomplete on or off.<br>
+                    When autocomplete is on, the browser automatically complete values based on values that the user has entered before.
+                </p>
+                <h4>Example of Autocomplete</h4>
+                <div class="bluebox">
+                    &lt;form action="save.php" target="_blank" method="POST" autocomplete="on/off"&gt;<br>
+                </div>
+            </div>
+            <br><br>
+
+            <div class="section_six">
+                <h3>HTML Form <span class="codespan">enctype</span> Attribute</h3>
+                <p>
+                    The <span class="codespan">enctype</span> attribute specifies how the form-data should be encoded when submitting it to the server.<br>
+                    When enctype is mentioned, the browser Send form-data encoded as "multipart/form-data".
+                </p>
+                <h4>Example of Enctype</h4>
+                <div class="bluebox">
+                    &lt;form action="save.php" method="POST" autocomplete="off" enctype="multipart/form-data"&gt;<br>
+                </div>
+                <p><strong>Note:</strong>The <span class="codespan">enctype</span> attribute can be used only if <span class="codespan">method="POST"</span>.</p>
+            </div>
+            <br><br>
+
+            <div class="section_six">
+                <h3>HTML Form <span class="codespan">novalidate</span> Attribute</h3>
+                <p>
+                    The <span class="codespan">novalidate</span> attribute is a boolean attribute.<br>
+                    The <span class="codespan">novalidate</span> specifies that the form-data (input) should not be validated when submitted.
+                </p>
+                <h4>Example of Enctype</h4>
+                <div class="bluebox">
+                    &lt;form action="save.php" method="GET/POST" autocomplete="on/off" novalidate&gt;<br>
+                </div>
+            </div>
+            <br><br>
         </div>
     </div>
 </div>
