@@ -353,7 +353,336 @@
             </div>
         </div>
         <div class="container">
+            <div class="section_one">
+                <h3>HTML Input Form Attributes</h3>
+                <p>
+                    The input form attribute specifies the form the <span class="codespan">&lt;input&gt;</span> element belongs to. <br>
+                    The value of this attribute must be equal to the id attribute of the <span class="codespan">&lt;form&gt;</span> element it belongs to.
+                </p>
 
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <strong><i>An input field located outside of the HTML form (but still a part of the form):</i></strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lt;form action="save.php" id="form1"&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="name"&gt;Name:&lt;&sol;label&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="name" name="name"&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="submit" value="Submit"&gt; <br>
+                            &lt;&sol;form&gt; <br>
+
+                            &lt;label for="mobile"&gt;Mobile:&lt;&sol;label&gt; <br>
+                            &lt;input type="text" id="mobile" name="mobile" form="form1"&gt; <br>
+                        </td>
+                        <td>
+                            <form action="save.php" id="form1">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name"><br>
+                                <input type="submit" value="Submit" style="padding: 5px;">
+                            </form>
+                            <br>
+
+                            <label for="mobile">Mobile:</label>
+                            <input type="text" id="mobile" name="mobile" form="form1">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_two">
+                <h3>HTML Input formaction Attribute</h3>
+                <p>
+                    The input <span class="codespan">formaction</span> attribute specifies the URL of the file that will process the input when the form is submitted. <br>
+                    This attribute overrides the action attribute of the <span class="codespan">&lt;form&gt;</span> element.<br>
+                    The <span class="codespan">formaction</span> attribute works with the following input types: submit and image.
+                </p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <strong><i>An HTML form with two submit buttons, with different actions:</i></strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lt;form action="save.php"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="username"&gt;Name:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="username" name="username"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="usermobile"&gt;Mobile:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="usermobile" name="usermobile"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="submit" value="Submit"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="submit" formaction="save2.php" value="Submit as Admin"&gt;<br>
+                            &lt;&sol;form&gt;
+                        </td>
+                        <td>
+                            <form action="save.php">
+                                <label for="username">Name:</label>
+                                <input type="text" id="username" name="username"><br>
+                                <label for="usermobile">Mobile:</label>
+                                <input type="text" id="usermobile" name="usermobile"><br>
+                                <input type="submit" value="Submit" style="padding: 5px;">
+                                <input type="submit" formaction="save2.php" value="Submit as Admin" style="padding: 5px;">
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_three">
+                <h3>HTML Input formenctype Attribute</h3>
+                <p>
+                    The input <span class="codespan">formenctype</span>  attribute specifies how the form-data should be encoded when submitted (only for forms with method="post"). <br>
+                    This attribute overrides the action attribute of the <span class="codespan">&lt;form&gt;</span> element.<br>
+                    The <span class="codespan">formenctype</span> attribute works with the following input types: submit and image.
+                </p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <strong><i>A form with two submit buttons. The first sends the form-data with default encoding, the second sends the form-data encoded as "multipart/form-data":</i></strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lt;form action="save.php" method="POST"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="username"&gt;Name:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="username" name="username"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="usermobile"&gt;Mobile:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="usermobile" name="usermobile"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="submit" value="Submit"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/FormData"&gt;<br>
+                            &lt;&sol;form&gt;
+                        </td>
+                        <td>
+                            <form action="save.asp" method="POST">
+                                <label for="username">Name:</label>
+                                <input type="text" id="username" name="username"><br>
+                                <input type="submit" value="Submit" style="padding: 5px;">
+                                <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/FormData" style="padding: 5px;">
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_four">
+                <h3>HTML Input formmethod Attribute</h3>
+                <p>
+                    The input <span class="codespan">formmethod</span> attribute defines the HTTP method for sending form-data to the action URL.<br>
+                    This attribute overrides the action attribute of the <span class="codespan">&lt;form&gt;</span> element.<br>
+                    The <span class="codespan">formmethod</span> attribute works with the following input types: submit and image.<br>
+                    The form-data can be sent as URL variables (method="get") or as an HTTP post transaction (method="post").
+                </p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <strong><i>A form with two submit buttons. The first sends the form-data with method="get". The second sends the form-data with method="post"</i></strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lt;form action="save.php" method="GET"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="username"&gt;Name:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="username" name="username"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="usermobile"&gt;Mobile:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="usermobile" name="usermobile"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="submit" value="Submit using GET"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="submit" formmethod="post" value="Submit using POST"&gt;<br>
+                            &lt;&sol;form&gt;
+                        </td>
+                        <td>
+                            <form action="save.php" method="GET">
+                                <label for="username">Name:</label>
+                                <input type="text" id="username" name="username"><br>
+                                <label for="usermobile">Mobile:</label>
+                                <input type="text" id="usermobile" name="usermobile"><br>
+                                <input type="submit" value="Submit using GET" style="padding: 5px;">
+                                <input type="submit" formmethod="post" value="Submit using POST" style="padding: 5px;">
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_five">
+                <h3>HTML Input formtarget Attribute</h3>
+                <p>
+                    The input <span class="codespan">formtarget</span>attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.<br>
+                    This attribute overrides the action attribute of the <span class="codespan">&lt;form&gt;</span> element.<br>
+                    The <span class="codespan">formtarget</span> attribute works with the following input types: submit and image.
+                </p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <strong><i>A form with two submit buttons, with different target windows</i></strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lt;form action="save.php" method="POST"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="username"&gt;Name:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="username" name="username"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="usermobile"&gt;Mobile:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="usermobile" name="usermobile"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="submit" value="Submit"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="submit" formtarget="_blank" value="Submit to a New Window/Tab"&gt;<br>
+                            &lt;&sol;form&gt;
+                        </td>
+                        <td>
+                            <form action="save.php" method="POST">
+                                <label for="username">Name:</label>
+                                <input type="text" id="username" name="username"><br>
+                                <label for="usermobile">Mobile:</label>
+                                <input type="text" id="usermobile" name="usermobile"><br>
+                                <input type="submit" value="Submit" style="padding: 5px;">
+                                <input type="submit" formtarget="_blank" value="Submit to a New Window/Tab" style="padding: 5px;">
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_six">
+                <h3>HTML Input formnovalidate Attribute</h3>
+                <p>
+                    The input <span class="codespan">formtarget</span> attribute specifies that an <input> element should not be validated when submitted.<br>
+                    This attribute overrides the action attribute of the <span class="codespan">&lt;form&gt;</span> element.<br>
+                    The <span class="codespan">formtarget</span> attribute works with the following input types: submit.
+                </p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <strong><i>A form with two submit buttons (with and without validation):</i></strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lt;form action="save.php" method="POST"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="username"&gt;Name:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="username" name="username"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="usermobile"&gt;Mobile:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="usermobile" name="usermobile"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="submit" value="Submit"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="submit" formnovalidate="formnovalidate" value="Submit without Validation"&gt;<br>
+                            &lt;&sol;form&gt;
+                        </td>
+                        <td>
+                            <form action="save.php" method="POST">
+                                <label for="username">Name:</label>
+                                <input type="text" id="username" name="username"><br>
+                                <label for="usermobile">Mobile:</label>
+                                <input type="text" id="usermobile" name="usermobile"><br>
+                                <input type="submit" value="Submit" style="padding: 5px;">
+                                <input type="submit" formnovalidate="formnovalidate" value="Submit without Validation" style="padding: 5px;">
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_seven">
+                <h3>HTML Input formnovalidate Attribute</h3>
+                <p>
+                    The input <span class="codespan">novalidate</span> attribute is a <span class="codespan">&lt;form&gt;</span> attribute.<br>
+                    When present, novalidate specifies that all of the form-data should not be validated when submitted.
+                </p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <strong><i>A form with two submit buttons (with and without validation):</i></strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lt;form action="save.php" method="POST" novalidate&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="username"&gt;Name:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="username" name="username"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="usermobile"&gt;Mobile:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="usermobile" name="usermobile"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="submit" value="Submit"&gt;<br>
+                            &lt;&sol;form&gt;
+                        </td>
+                        <td>
+                            <form action="save.php" method="POST" novalidate>
+                                <label for="username">Name:</label>
+                                <input type="text" id="username" name="username"><br>
+                                <label for="usermobile">Mobile:</label>
+                                <input type="text" id="usermobile" name="usermobile"><br>
+                                <input type="submit" value="Submit" style="padding: 5px;">
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
