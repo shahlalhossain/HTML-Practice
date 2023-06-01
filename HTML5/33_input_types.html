@@ -128,7 +128,6 @@
                     <span class="item">HTML CSS</span>
                 </a>
             </li>
-
             <li>
                 <a href="13_links.html">
                     <span class="icon"><i class="fas fa-code"></i></span>
@@ -353,7 +352,282 @@
             </div>
         </div>
         <div class="container">
+            <div class="section_one">
+                <h3>HTML Input Types</h3>
+                <p>
+                    Here are the different input types one can use in HTML.
+                </p>
+                <ul style="padding-left: 30px;">
+                    <li><span class="codespan">&lt;input type="button"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="checkbox"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="color"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="date"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="datetime-local"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="email"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="file"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="hidden"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="image"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="month"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="number"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="password"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="radio"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="range"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="reset"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="search"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="submit"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="tel"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="text"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="time"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="url"&gt;</span></li>
+                    <li><span class="codespan">&lt;input type="week"&gt;</span></li>
+                </ul>
+                <p><strong><i>Note: </i></strong>The default value of the <span class="codespan">type</span> attribute is "text".</p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;form action="save.html" method="POST"&gt;<br>
 
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="user-name"&gt; Input Type Text:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" name="user_name" id="user-name"&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="user-email"&gt;Input Type E-mail:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="email" name="email" id="user-email"&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="password"&gt;Input Type Password&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="password" name="password" id="password"&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="quantity"&gt;Input Type Number: &lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="number" id="quantity" name="quantity" pattern="[0-9]" step="10" value="50"&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="points"&gt;Input Type Range: &lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="range" id="points" name="points" min="0" max="10"&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="appointment_date"&gt;Input Type Date:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="date" id="appointment_date" name="appointment_date"&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="appointment_time"&gt;Input Type Time:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="time" id="appointment_time" name="appointment_time"&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="appointment_date_time"&gt;Input Type (Date and Time):&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="datetime-local" id="appointment_date_time" name="appointment_date_time"&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="week"&gt;Input Type Week:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="week" id="week" name="week"&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="bdaymonth"&gt;Input Type Month:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="month" id="bdaymonth" name="bdaymonth"&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="gsearch"&gt;Input Type Search:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="search" id="gsearch" name="gsearch"&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="favcolor"&gt;Input Type Color:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="color" id="favcolor" name="favcolor"&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="description"&gt;Input Type Textarea:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;textarea name="description" id="description" cols="40" rows="3"&gt;&lt;&sol;textarea&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="hidden" name="user_id" id="userID" value="123456789"&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label&gt;Input Type Checkbox: &lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="checkbox" name="subject[]" id="subject_bangla" value ="bangla"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="subject_bangla"&gt;Bangla&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; ..........................<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="checkbox" name="subject[]" id="subject_biology" value="biology"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="subject_biology"&gt;Biology&lt;&sol;label&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label&gt;Input Type Radio Button: &lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="radio" name="color" id="color_red" value="red"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="color_red"&gt;Red&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; ..........................<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="radio" name="color" id="color_white" value="white"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="color_white"&gt;White&lt;&sol;label&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="district"&gt;Input Type Select Option&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;select name="district" id="district"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=""&gt;Select District&lt;&sol;option&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="Dhaka"&gt;Dhaka&lt;&sol;option&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; ..........................<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="Feni"&gt;Feni&lt;&sol;option&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;&sol;select&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="resume"&gt;Input Type File:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="file" id="resume" name="resume"&gt;<br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label&gt;Input Type Button:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="button" name="ok" value="OK" style="padding: 5px;"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="reset" name="reset" value="Reset" style="padding: 5px;"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="submit" name="submit" value="Submit"  style="padding: 5px;"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="image" src="images/submit_button.png" alt="Submit" width="120" height="30"&gt;<br>
+
+                            &lt;&sol;form&gt;
+                        </td>
+                        <td>
+                            <form action="save.html" method="POST">
+
+                                <label for="user-name"> Input Type Text:</label>
+                                <input type="text" name="user_name" id="user-name"><br>
+
+                                <label for="user-email">Input Type E-mail:</label>
+                                <input type="email" name="email" id="user-email"><br>
+
+                                <label for="password">Input Type Password</label>
+                                <input type="password" name="password" id="password"><br>
+
+                                <label for="quantity">Input Type Number: </label>
+                                <input type="number" id="quantity" name="quantity" pattern="[0-9]" step="10" value="50"><br>
+
+                                <label for="points">Input Type Range: </label>
+                                <input type="range" id="points" name="points" min="0" max="10"><br>
+
+                                <label for="appointment_date">Input Type Date:</label>
+                                <input type="date" id="appointment_date" name="appointment_date"><br>
+
+                                <label for="appointment_time">Input Type Time:</label>
+                                <input type="time" id="appointment_time" name="appointment_time"><br>
+
+                                <label for="appointment_date_time">Input Type (Date and Time):</label>
+                                <input type="datetime-local" id="appointment_date_time" name="appointment_date_time"><br>
+
+                                <label for="week">Input Type Week:</label>
+                                <input type="week" id="week" name="week"><br>
+
+                                <label for="bdaymonth">Input Type Month:</label>
+                                <input type="month" id="bdaymonth" name="bdaymonth"><br>
+
+                                <label for="gsearch">Input Type Search:</label>
+                                <input type="search" id="gsearch" name="gsearch"><br>
+
+                                <label for="favcolor">Input Type Color:</label>
+                                <input type="color" id="favcolor" name="favcolor"><br>
+
+                                <label for="description">Input Type Textarea:</label> <br>
+                                <textarea name="description" id="description" cols="40" rows="3"></textarea>
+
+                                <input type="hidden" name="user_id" id="userID" value="123456789"><br>
+
+                                <label>Input Type Checkbox: </label>
+                                <input type="checkbox" name="subject[]" id="subject_bangla" value ="bangla"><label for="subject_bangla">&nbsp;Bangla&nbsp;&nbsp;&nbsp;</label>
+                                <input type="checkbox" name="subject[]" id="subject_english" value ="english"><label for="subject_english">&nbsp;English&nbsp;&nbsp;&nbsp;</label>
+                                <input type="checkbox" name="subject[]" id="subject_math" value="math"><label for="subject_math">&nbsp;Math&nbsp;&nbsp;&nbsp;</label>
+                                <input type="checkbox" name="subject[]" id="subject_physics" value="physics"><label for="subject_physics">&nbsp;Physics&nbsp;&nbsp;&nbsp;</label>
+                                <input type="checkbox" name="subject[]" id="subject_chemistry" value="chemistry"><label for="subject_chemistry">&nbsp;Chemistry&nbsp;&nbsp;&nbsp;</label>
+                                <input type="checkbox" name="subject[]" id="subject_biology" value="biology"><label for="subject_biology">&nbsp;Biology&nbsp;&nbsp;&nbsp;</label>
+                                <br>
+
+                                <label>Input Type Radio Button: </label>
+                                <input type="radio" name="color" id="color_red" value="red"><label for="color_red">&nbsp;Red&nbsp;&nbsp;&nbsp;</label>
+                                <input type="radio" name="color" id="color_green" value="green"><label for="color_green">&nbsp;Green&nbsp;&nbsp;&nbsp;</label>
+                                <input type="radio" name="color" id="color_yellow" value="yellow"><label for="color_yellow">&nbsp;Yellow&nbsp;&nbsp;&nbsp;</label>
+                                <input type="radio" name="color" id="color_blue" value="blue"><label for="color_blue">&nbsp;Blue&nbsp;&nbsp;&nbsp;</label>
+                                <input type="radio" name="color" id="color_purple" value="purple"><label for="color_purple">&nbsp;Purple&nbsp;&nbsp;&nbsp;</label>
+                                <input type="radio" name="color" id="color_black" value="black"><label for="color_black">&nbsp;Black&nbsp;&nbsp;&nbsp;</label>
+                                <input type="radio" name="color" id="color_white" value="white"><label for="color_white">&nbsp;White&nbsp;&nbsp;&nbsp;</label>
+                                <br>
+
+                                <label for="district">Input Type Select Option</label>
+                                <select name="district" id="district">
+                                    <option value="">Select District</option>
+                                    <option value="Dhaka">Dhaka</option>
+                                    <option value="Khulna">Khulna</option>
+                                    <option value="Bogra">Bogra</option>
+                                    <option value="Chittagong">Chittagong</option>
+                                    <option value="Barisha">Barisha</option>
+                                    <option value="Sylhet">Sylhet</option>
+                                    <option value="Faridpur">Faridpur</option>
+                                    <option value="Rajshahi" selected="selected">Rajshahi</option>
+                                    <option value="Pabna">Pabna</option>
+                                    <option value="Gazipur">Gazipur</option>
+                                    <option value="Rangpur">Rangpur</option>
+                                    <option value="Feni">Feni</option>
+                                </select>
+                                <br>
+
+                                <label for="resume">Input Type File:</label>
+                                <input type="file" id="resume" name="resume" />
+                                <br>
+
+                                <label>Input Type Button:</label>
+                                <input type="button" name="ok" value="OK" style="padding: 5px;" />
+                                <input type="reset" name="reset" value="Reset" style="padding: 5px;" />
+                                <input type="submit" name="submit" value="Submit"  style="padding: 5px;" /><br>
+                                <input type="image" src="images/submit_button.png" alt="Submit" width="120" height="30">
+
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_name">
+                <h3>Input Restrictions</h3>
+                <p>
+                    Here is a list of some common input restrictions:
+                </p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Description</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>checked</td>
+                        <td>Specifies that an input field should be pre-selected when the page loads (for type="checkbox" or type="radio")</td>
+                    </tr>
+                    <tr>
+                        <td>disabled</td>
+                        <td>Specifies that an input field should be disabled</td>
+                    </tr>
+                    <tr>
+                        <td>max</td>
+                        <td>Specifies the maximum value for an input field</td>
+                    </tr>
+                    <tr>
+                        <td>maxlength</td>
+                        <td>Specifies the maximum number of character for an input field</td>
+                    </tr>
+                    <tr>
+                        <td>min</td>
+                        <td>Specifies the minimum value for an input field</td>
+                    </tr>
+                    <tr>
+                        <td>pattern</td>
+                        <td>Specifies a regular expression to check the input value against</td>
+                    </tr>
+                    <tr>
+                        <td>readonly</td>
+                        <td>Specifies that an input field is read only (cannot be changed)</td>
+                    </tr>
+                    <tr>
+                        <td>required</td>
+                        <td>Specifies that an input field is required (must be filled out)</td>
+                    </tr>
+                    <tr>
+                        <td>size</td>
+                        <td>Specifies the width (in characters) of an input field</td>
+                    </tr>
+                    <tr>
+                        <td>step</td>
+                        <td>Specifies the legal number intervals for an input field</td>
+                    </tr>
+                    <tr>
+                        <td>value</td>
+                        <td>Specifies the default value for an input field</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
