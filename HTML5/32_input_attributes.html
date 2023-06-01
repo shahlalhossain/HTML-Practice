@@ -393,6 +393,294 @@
                     </tr>
                     </tbody>
                 </table>
+
+                <hr style="margin-left: 2px; margin-right: 2px;">
+
+                <h3>The readonly Attribute</h3>
+                <p>
+                    The input <span class="codespan">readonly</span> attribute specifies that an input field is read-only.<br>
+                    A read-only input field cannot be modified (however, a user can tab to it, highlight it, and copy the text from it).<br>
+                    The value of a read-only input field will be sent when submitting the form.
+                </p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;form&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="name"&gt;Name:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="name" name="name" value="Shahlal Hossain" readonly&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="email"&gt;Email:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="email" name="email" value="shahlal@gmail.com"&gt;<br>
+                            &lt;&sol;form&gt;
+                        </td>
+                        <td>
+                            <form>
+                                <label for="uname">Name:</label>
+                                <input type="text" id="uname" name="name" value="Shahlal Hossain" readonly><br>
+                                <label for="uemail">Email:</label>
+                                <input type="text" id="uemail" name="email" value="shahlal@gmail.com">
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <hr style="margin-left: 2px; margin-right: 2px;">
+
+                <h3>The disabled Attribute</h3>
+                <p>
+                    The input <span class="codespan">disabled</span> attribute specifies that an input field should be disabled.<br>
+                    A disabled input field is unusable and un-clickable.<br>
+                    The value of a disabled input field will not be sent when submitting the form.
+                </p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;form&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="name"&gt;Name:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="name" name="name" value="Shahlal Hossain" disabled&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="email"&gt;Email:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="email" name="email" value="shahlal@gmail.com"&gt;<br>
+                            &lt;&sol;form&gt;
+                        </td>
+                        <td>
+                            <form>
+                                <label for="cname">Name:</label>
+                                <input type="text" id="cname" name="name" value="Shahlal Hossain" disabled><br>
+                                <label for="cemail">Email:</label>
+                                <input type="text" id="cemail" name="email" value="shahlal@gmail.com">
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <hr style="margin-left: 2px; margin-right: 2px;">
+
+                <h3>The size Attribute</h3>
+                <p>
+                    The input <span class="codespan">size</span> attribute specifies the visible width, in characters, of an input field.<br>
+                    The default value for <span class="codespan">size</span> is 20. <br>
+                    The <span class="codespan">size</span> attribute works with the following input types: text, search, tel, url, email, and password.
+                </p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;form&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="name"&gt;Name:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="name" name="name" value="Shahlal Hossain" disabled&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="pin"&gt;PIN:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="pin" name="pin" value="" size="4"&gt;<br>
+                            &lt;&sol;form&gt;
+                        </td>
+                        <td>
+                            <form>
+                                <label for="full-name">Name:</label>
+                                <input type="text" id="full-name" name="name" value="Shahlal Hossain" disabled><br>
+                                <label for="pin">PIN:</label>
+                                <input type="text" id="pin" name="pin" value="" size="4">
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <hr style="margin-left: 2px; margin-right: 2px;">
+
+                <h3>The maxlength Attribute</h3>
+                <p>
+                    The input <span class="codespan">maxlength</span> attribute specifies the maximum number of characters allowed in an input field.<br>
+                    When a <span class="codespan">maxlength</span> is set, the input field will not accept more than the specified number of characters.<br>
+                    However, this attribute does not provide any feedback. So, if you want to alert the user, you must write JavaScript code.
+                </p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;form&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="sname"&gt;Name:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="sname" name="name" value="" size="25"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="spin"&gt;PIN:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="spin" name="pin" value="" maxlength="4" size="4"&gt;<br>
+                            &lt;&sol;form&gt;
+                        </td>
+                        <td>
+                            <form>
+                                <label for="sname">Name:</label>
+                                <input type="text" id="sname" name="name" value="" size="25"><br>
+                                <label for="spin">PIN:</label>
+                                <input type="text" id="spin" name="pin" value="" maxlength="4" size="4">
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <hr style="margin-left: 2px; margin-right: 2px;">
+
+                <h3>The min and max Attributes</h3>
+                <p>
+                    The input <span class="codespan">min</span> and <span class="codespan">max</span> attributes specify the minimum and maximum values for an input field.<br>
+                    The <span class="codespan">min</span> and <span class="codespan">max</span> attributes works with the following input types: number, range, date, datetime-local, month, time and week.<br>
+                </p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;form&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="datemax"&gt;Enter a Date (Before 2000-01-01:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="date" id="datemax" name="datemax" max="2000-12-31"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="datemin"&gt;Enter a Date (After 2020-01-01:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="date" id="datemin" name="datemin" min="2020-01-02"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="quantity"&gt;Quantity (Between 1 and 5):&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="number" id="quantity" name="quantity" min="1" max="5"&gt;<br>
+                            &lt;&sol;form&gt;
+                        </td>
+                        <td>
+                            <form>
+                                <label for="datemax">Enter a Date (Before 2000-01-01:</label>
+                                <input type="date" id="datemax" name="datemax" max="2000-12-31"><br>
+
+                                <label for="datemin">Enter a Date (After 2020-01-01:</label>
+                                <input type="date" id="datemin" name="datemin" min="2020-01-02"><br>
+
+                                <label for="quantity">Quantity (Between 1 and 10):</label>
+                                <input type="number" id="quantity" name="quantity" min="1" max="10">
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <hr style="margin-left: 2px; margin-right: 2px;">
+
+                <h3>The multiple Attribute</h3>
+                <p>
+                    The input <span class="codespan">multiple</span> attribute specifies that the user is allowed to enter more than one value in an input field.<br>
+                    The <span class="codespan">multiple</span>  attribute works with the following input types: email, and file.
+                </p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;form&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="files">Select Files:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="file" id="files" name="files" multiple&gt;<br>
+                            &lt;&sol;form&gt;
+                        </td>
+                        <td>
+                            <form>
+                                <label for="files">Select Files:</label>
+                                <input type="file" id="files" name="files" multiple>
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <hr style="margin-left: 2px; margin-right: 2px;">
+
+                <h3>The pattern Attribute</h3>
+                <p>
+                    The input <span class="codespan">pattern</span> attribute specifies a regular expression that the input field's value is checked against, when the form is submitted.<br>
+                    The <span class="codespan">pattern</span> attribute works with the following input types: text, date, search, url, tel, email, and password.
+                </p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;form&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="country_code">Country Code:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three Letter Country Code"&gt;<br>
+                            &lt;&sol;form&gt;
+                        </td>
+                        <td>
+                            <form>
+                                <label for="country_code">Country Code:</label>
+                                <input type="text" id="country_code" name="country_code"
+                                       pattern="[A-Za-z]{3}" title="Three Letter Country Code">
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <hr style="margin-left: 2px; margin-right: 2px;">
+
+                <h3>The placeholder Attribute</h3>
+                <p>
+                    The input <span class="codespan">placeholder</span> attribute specifies a short hint that describes the expected value of an input field<br>
+                    The short hint is displayed in the input field before the user enters a value.<br>
+                    The <span class="codespan">placeholder</span> attribute works with the following input types: text, search, url, tel, email, and password.
+                </p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;form&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;label for="mobile">Enter Mobile Number:&lt;&sol;label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" id="mobile" name="mobile" placeholder="+880-1717-445566"&gt;<br>
+                            &lt;&sol;form&gt;
+                        </td>
+                        <td>
+                            <form>
+                                <label for="mobile">Enter Mobile Number:</label>
+                                <input type="text" id="mobile" name="mobile" placeholder="+880-1717-445566">
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
