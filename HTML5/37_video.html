@@ -353,7 +353,81 @@
             </div>
         </div>
         <div class="container">
+            <div class="section_name">
+                <h3>HTML Video</h3>
+                <p>
+                    The HTML <span class="codespan">&lt;video&gt;</span> element is used to show a video on a web page. <br>
+                    The controls attribute adds video controls, like play, pause, and volume. <br>
+                    It is a good idea to always include <span class="codespan">width</span> and <span class="codespan">height</span> attributes. If height and width are not set, the page might flicker while the video loads. <br>
+                    The <span class="codespan">&lt;source&gt;</span> element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format. <br>
+                    The text between the <span class="codespan">&lt;video&gt;</span> and <span class="codespan">&lt;&sol;video&gt;</span> tags will only be displayed in browsers that do not support the <span class="codespan">&lt;video&gt;</span> element.
+                </p>
 
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            HTML <span class="codespan">&lt;video&gt;</span> Element
+                        </td>
+                        <td>
+                            &lt;video width="320" height="240" controls&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;source src="videos/working_by_laptop.mp4" type="video/mp4"&gt;<br>
+                            &lt;&sol;video&gt;
+                        </td>
+                        <td>
+                            <video width="320" height="240" controls>
+                                <source src="videos/working_by_laptop.mp4" type="video/mp4">
+                            </video>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            HTML <span class="codespan">&lt;video&gt;</span> Autoplay
+                        </td>
+                        <td>
+                            &lt;video width="320" height="240" controls autoplay&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;source src="videos/working_by_laptop.mp4" type="video/mp4"&gt;<br>
+                            &lt;&sol;video&gt;
+                        </td>
+                        <td>
+                            <video width="320" height="240" controls autoplay>
+                                <source src="videos/working_by_laptop.mp4" type="video/mp4">
+                            </video>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">
+                            <i>Browsers do not allow autoplay in most cases, but muted autoplay is always allowed.</i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            HTML <span class="codespan">&lt;video&gt;</span> Autoplay Muted
+                        </td>
+                        <td>
+                            &lt;video width="320" height="240" controls autoplay muted&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;source src="videos/working_by_laptop.mp4" type="video/mp4"&gt;<br>
+                            &lt;&sol;video&gt;
+                        </td>
+                        <td>
+                            <video width="320" height="240" controls autoplay muted>
+                                <source src="videos/working_by_laptop.mp4" type="video/mp4">
+                            </video>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
