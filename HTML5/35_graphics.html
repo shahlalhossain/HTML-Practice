@@ -353,7 +353,188 @@
             </div>
         </div>
         <div class="container">
+            <div class="section_one">
+                <h3>HTML Canvas Graphics</h3>
+                <p>
+                    The HTML <span class="codespan">&lt;canvas&gt;</span> element is used to draw graphics, on the fly, via JavaScript. <br>
+                    The <span class="codespan">&lt;canvas&gt;</span> element is only a container for graphics. You must use JavaScript to actually draw the graphics. <br>
+                    Canvas has several methods for drawing paths, boxes, circles, text, and adding images. <br>
+                    A canvas is a rectangular area on an HTML page. By default, a canvas has no border and no content.
+                </p>
 
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;canvas id="myCanvas" width="300" height="100" style="border:1px solid #000000;"&gt;&lt;&sol;canvas&gt;
+                        </td>
+                        <td>
+                            <canvas id="myCanvas" width="300" height="100" style="border:1px solid #000000;"></canvas>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p>Always specify an <span class="codespan">id</span> attribute (to be referred to in a script), and a <span class="codespan">width</span> and height attribute to define the size of the canvas. To add a border, use the <span class="codespan">style</span> attribute.</p>
+            </div>
+            <br><br>
+
+            <div class="section_two">
+                <h3>Add a JavaScript</h3>
+                <p>
+                    After creating the rectangular canvas area, must add a JavaScript to do the drawing.
+                </p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Example Code</th>
+                        <th style="text-align: center;">Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><strong>Draw a Line</strong></td>
+                        <td>
+                            <strong><i>HTML Code</i></strong><br>
+                            &lt;canvas id="canvasForLine" width="300" height="100" style="border:1px solid #000000;"&gt;&lt;&sol;canvas&gt;<br>
+                            <strong><i>JavaScript Code</i></strong><br>
+                            &lt;script&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; var c = document.getElementById("canvasForLine");<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; var ctx = c.getContext("2d");<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; ctx.moveTo(0, 0);<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; ctx.lineTo(200, 100);<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; ctx.stroke();<br>
+                            &lt;&sol;script&gt;
+                        </td>
+
+                        <td style="text-align: center;">
+                            <canvas id="canvasForLine" width="300" height="100" style="border:1px solid #000000;"></canvas>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Draw a Circle</strong></td>
+                        <td>
+                            <strong><i>HTML Code</i></strong><br>
+                            &lt;canvas id="canvasForCircle" width="300" height="100" style="border:1px solid #000000;"&gt;&lt;&sol;canvas&gt;<br>
+                            <strong><i>JavaScript Code</i></strong><br>
+                            &lt;script&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; var b = document.getElementById("canvasForCircle");<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; var btx = b.getContext("2d");<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; btx.beginPath();<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; btx.arc(145, 50, 40, 0, 2 * Math.PI);<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; btx.stroke();<br>
+                            &lt;&sol;script&gt;
+                        </td>
+
+                        <td style="text-align: center;">
+                            <canvas id="canvasForCircle" width="300" height="100" style="border:1px solid #000000;"></canvas>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Draw a Normal Text</strong></td>
+                        <td>
+                            <strong><i>HTML Code</i></strong><br>
+                            &lt;canvas id="canvasForNormalText" width="300" height="100" style="border:1px solid #000000;"&gt;&lt;&sol;canvas&gt;<br>
+                            <strong><i>JavaScript Code</i></strong><br>
+                            &lt;script&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; var a = document.getElementById("canvasForNormalText");<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; var atx = a.getContext("2d");<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; atx.font = "30px Arial";<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; atx.fillText("Hello World", 75, 60);<br>
+                            &lt;&sol;script&gt;
+                        </td>
+
+                        <td style="text-align: center;">
+                            <canvas id="canvasForNormalText" width="300" height="100" style="border:1px solid #000000;"></canvas>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Draw a Stroke Text</strong></td>
+                        <td>
+                            <strong><i>HTML Code</i></strong><br>
+                            &lt;canvas id="canvasForNormalText" width="300" height="100" style="border:1px solid #000000;"&gt;&lt;&sol;canvas&gt;<br>
+                            <strong><i>JavaScript Code</i></strong><br>
+                            &lt;script&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; var d = document.getElementById("canvasForStrokeText");<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; var dtx = a.getContext("2d");<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; dtx.font = "30px Arial";<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; dtx.strokeText("Hello World", 75, 60);<br>
+                            &lt;&sol;script&gt;
+                        </td>
+
+                        <td style="text-align: center;">
+                            <canvas id="canvasForStrokeText" width="300" height="100" style="border:1px solid #000000;"></canvas>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_three">
+                <h3>HTML SVG Graphics</h3>
+                <p>
+                    SVG defines vector-based graphics in XML format. <br>
+                    The HTML <span class="codespan">&lt;svg&gt;</span> element is a container for SVG graphics. <br>
+                    SVG has several methods for drawing paths, boxes, circles, text, and graphic images.
+                </p>
+                <ul style="padding-left: 30px;">
+                    <li>SVG stands for Scalable Vector Graphics</li>
+                    <li>SVG is used to define graphics for the Web</li>
+                    <li>SVG is a W3C recommendation</li>
+                </ul>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Example Code</th>
+                        <th style="text-align: center;">Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><strong>SVG Circle</strong></td>
+                        <td>
+                            <svg width="200" height="200">
+                                <circle cx="100" cy="100" r="80" stroke="green" stroke-width="4" fill="yellow"></circle>
+                            </svg>
+                        </td>
+
+                        <td style="text-align: center;">
+                            <svg width="200" height="200">
+                                <circle cx="100" cy="100" r="80" stroke="green" stroke-width="4" fill="yellow"></circle>
+                            </svg>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SVG Rectangle</strong></td>
+                        <td>
+                            <svg width="400" height="100">
+                                <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)"></rect>
+                            </svg>
+                        </td>
+
+                        <td style="text-align: center;">
+                            <svg width="400" height="100">
+                                <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)"></rect>
+                            </svg>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
@@ -377,6 +558,28 @@
     menuHideShow.addEventListener("click", function(){
         document.querySelector("body").classList.toggle("active");
     });
+
+    var c = document.getElementById("canvasForLine");
+    var ctx = c.getContext("2d");
+    ctx.moveTo(0, 0);
+    ctx.lineTo(300, 100);
+    ctx.stroke();
+
+    var b = document.getElementById("canvasForCircle");
+    var btx = b.getContext("2d");
+    btx.beginPath();
+    btx.arc(145, 50, 40, 0, 2 * Math.PI);
+    btx.stroke();
+
+    var a = document.getElementById("canvasForNormalText");
+    var atx = a.getContext("2d");
+    atx.font = "30px Arial";
+    atx.fillText("Hello World", 75, 60);
+
+    var d = document.getElementById("canvasForStrokeText");
+    var dtx = d.getContext("2d");
+    dtx.font = "30px Arial";
+    dtx.strokeText("Hello World", 75, 60);
 </script>
 <!--Page Specific JavaScript End-->
 
