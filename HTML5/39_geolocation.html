@@ -353,7 +353,113 @@
             </div>
         </div>
         <div class="container">
+            <div class="section_one">
+                <h3>HTML Geolocation</h3>
+                <p>
+                    The HTML Geolocation API is used to locate a user's position. <br>
+                    The HTML Geolocation API is used to get the geographical position of a user. <br>
+                    Since this can compromise privacy, the position is not available unless the user approves it. <br>
+                    Geolocation is most accurate for devices with GPS, like smartphones. <br>
+                    The <span class="codespan">getCurrentPosition()</span> method is used to return the user's position. <br>
+                    The example below returns the latitude and longitude of the user's position:
+                </p>
 
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Code Type</th>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>HTML Code</td>
+                        <td>
+                            &lt;p&gt;Click the button to get your coordinates.&lt;&sol;p&gt;<br>
+                            &lt;button onclick="getLocation()">Locate Me&lt;&sol;button&gt;<br>
+                            &lt;p id="position">&lt;&sol;p&gt;
+                        </td>
+                        <td rowspan="2">
+                            <p>Click the button to get your coordinates.</p>
+                            <button onclick="getLocation()" style="padding: 5px; font-size: 16px;">Locate Me</button>
+                            <p id="position"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            JavaScript Code
+                        </td>
+                        <td>
+                            var x = document.getElementById("position");<br>
+                            function getLocation() {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; if (navigator.geolocation) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; navigator.geolocation.getCurrentPosition(showPosition);<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; } else {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x.innerHTML = "Geolocation is not supported by this browser.";<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; }<br>
+                            }<br>
+
+                            function showPosition(position) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; x.innerHTML = "Latitude: " + position.coords.latitude +<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; "&lt;br&gt;Longitude: " + position.coords.longitude;<br>
+                            }
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+
+            <div class="section_name">
+                <h3>The getCurrentPosition() Method - Return Data</h3>
+                <p>
+                    The <span class="codespan">getCurrentPosition()</span> method returns an object on success. The latitude, longitude and accuracy properties are always returned. The other properties are returned if available:
+                </p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Returns</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>coords.latitude</td>
+                        <td>The latitude as a decimal number (always returned)</td>
+                    </tr>
+                    <tr>
+                        <td>coords.longitude</td>
+                        <td>The longitude as a decimal number (always returned)</td>
+                    </tr>
+                    <tr>
+                        <td>coords.accuracy</td>
+                        <td>The accuracy of position (always returned)</td>
+                    </tr>
+                    <tr>
+                        <td>coords.altitude</td>
+                        <td>The altitude in meters above the mean sea level (returned if available)</td>
+                    </tr>
+                    <tr>
+                        <td>coords.altitudeAccuracy</td>
+                        <td>The altitude accuracy of position (returned if available)</td>
+                    </tr>
+                    <tr>
+                        <td>coords.heading</td>
+                        <td>The heading as degrees clockwise from North (returned if available)</td>
+                    </tr>
+                    <tr>
+                        <td>coords.speed</td>
+                        <td>The speed in meters per second (returned if available)</td>
+                    </tr>
+                    <tr>
+                        <td>timestamp</td>
+                        <td>The date/time of the response (returned if available)</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
@@ -377,6 +483,20 @@
     menuHideShow.addEventListener("click", function(){
         document.querySelector("body").classList.toggle("active");
     });
+
+    var x = document.getElementById("position");
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude +
+            "<br>Longitude: " + position.coords.longitude;
+    }
 </script>
 <!--Page Specific JavaScript End-->
 
