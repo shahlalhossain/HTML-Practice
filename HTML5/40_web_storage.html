@@ -353,7 +353,131 @@
             </div>
         </div>
         <div class="container">
+            <div class="section_one">
+                <h3>HTML Web Storage</h3>
+                <p>
+                    HTML web storage; better than cookies. <br>
+                    With web storage, web applications can store data locally within the user's browser. <br>
+                    Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance. <br>
+                    Unlike cookies, the storage limit is far larger (at least 5MB) and information is never transferred to the server. <br>
+                    Web storage is per origin (per domain and protocol). All pages, from one origin, can store and access the same data.
+                </p>
+            </div>
+            <br>
 
+            <hr style="margin: 5px;">
+
+            <div class="section_two">
+                <h3>HTML Web Storage</h3>
+                <p>
+                    HTML web storage provides two objects for storing data on the client: <br>
+                </p>
+                <ul style="padding-left: 30px;">
+                    <li><span class="codespan">window.localStorage</span> - stores data with no expiration date</li>
+                    <li><span class="codespan">window.sessionStorage</span> - stores data for one session (data is lost when the browser tab is closed)</li>
+                </ul>
+                <p>Before using web storage, check browser support for localStorage and sessionStorage:</p>
+                <div class="bluebox">
+                    if (typeof(Storage) !== "undefined") {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; // Code for localStorage/sessionStorage.<br>
+                    } else {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; // Sorry! No Web Storage support..<br>
+                    }
+                </div>
+            </div>
+            <br>
+
+            <hr style="margin: 5px;">
+
+            <div class="section_three">
+                <h3>The localStorage Object</h3>
+                <p>
+                    The localStorage object stores the data with no expiration date. The data will not be deleted when the browser is closed, and will be available the next day, week, or year. <br>
+                    SectionDescription <br>
+                    SectionDescription
+                </p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <strong><i>HTML Code</i></strong><br>
+                            &lt;div id="username"&gt;&lt;&sol;div&gt;
+                        </td>
+                        <td rowspan="2">
+                            <div id="username"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong><i>JavaScript Code</i></strong><br>
+                            &lt;script&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; // Check browser support<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;if (typeof(Storage) !== "undefined") {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Store<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; localStorage.setItem("name", "Shahlal Hossain");<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Retrieve<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("username").innerHTML = localStorage.getItem("name");<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; } else {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("username").innerHTML = "Sorry, your browser does not support Web Storage.";<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; }<br>
+                            &lt;&sol;script&gt;
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p><strong><i>Note: </i></strong>Name/value pairs are always stored as strings. Remember to convert them to another format when needed.</p>
+                <p>Example explained:</p>
+                <ul style="padding-left: 30px;">
+                    <li>Create a localStorage name/value pair with name="name" and value="Shahlal Hossain"</li>
+                    <li>Retrieve the value of "name" and insert it into the element with id="username""</li>
+                </ul>
+                <br>
+                <div class="bluebox">
+                    // Store <br>
+                    localStorage.name = "Shahlal Hossain"; <br>
+                    // Retrieve <br>
+                    document.getElementById("result").innerHTML = localStorage.name; <br>
+                    // Remove <br>
+                    localStorage.removeItem("name");
+                </div>
+            </div>
+            <br>
+
+            <hr style="margin: 5px;">
+            <div class="section_four">
+                <h3>SectionHeading</h3>
+                <p>
+                    SectionDescription <br>
+                    SectionDescription <br>
+                    SectionDescription
+                </p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            &lt;StartTag&gt; Content &lt;&sol;EndTag&gt;
+                        </td>
+                        <td>
+                            <p>Paragraph One</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
@@ -377,6 +501,16 @@
     menuHideShow.addEventListener("click", function(){
         document.querySelector("body").classList.toggle("active");
     });
+
+    // Check browser support
+    if (typeof(Storage) !== "undefined") {
+        // Store
+        localStorage.setItem("name", "Shahlal Hossain");
+        // Retrieve
+        document.getElementById("username").innerHTML = localStorage.getItem("name");
+    } else {
+        document.getElementById("username").innerHTML = "Sorry, your browser does not support Web Storage...";
+    }
 </script>
 <!--Page Specific JavaScript End-->
 
