@@ -353,7 +353,208 @@
             </div>
         </div>
         <div class="container">
+            <div class="section_one">
+                <h3>HTTP Request Methods</h3>
+                <p>
+                    The Hypertext Transfer Protocol (HTTP) is designed to enable communications between clients and servers. <br>
+                    HTTP works as a request-response protocol between a client and server. <br>
+                    A client (browser) sends an HTTP request to the server; then the server returns a response to the client.<br>
+                    The response contains status information about the request and may also contain the requested content.
+                </p>
 
+                <h4>HTTP Methods</h4>
+                <ul style="padding-left: 30px;">
+                    <li><strong><b>GET</b></strong></li>
+                    <li><strong><b>POST</b></strong></li>
+                    <li><strong><b>PUT</b></strong></li>
+                    <li><strong><b>HEAD</b></strong></li>
+                    <li><strong><b>DELETE</b></strong></li>
+                    <li><strong><b>PATCH</b></strong></li>
+                    <li><strong><b>OPTIONS</b></strong></li>
+                    <li><strong><b>CONNECT</b></strong></li>
+                    <li><strong><b>TRACE</b></strong></li>
+                </ul>
+                <p>The two most common HTTP methods are: <strong>GET</strong> and <strong>POST</strong>.</p>
+            </div>
+            <br>
+
+            <hr style="margin: 5px;">
+
+            <div class="section_two">
+                <h3>The GET Method</h3>
+                <p>
+                    GET is used to request data from a specified resource. <br>
+                    Note that the query string (name/value pairs) is sent in the URL of a GET request:
+                </p>
+                <div class="bluebox">
+                    /test/registration.php?name1=value1&name2=value2
+                </div>
+                <strong>Some notes on GET requests:</strong>
+                <ul style="padding-left: 30px;">
+                    <li>GET requests can be cached</li>
+                    <li>GET requests remain in the browser history</li>
+                    <li>GET requests can be bookmarked</li>
+                    <li>GET requests should never be used when dealing with sensitive data</li>
+                    <li>GET requests have length restrictions</li>
+                    <li>GET requests are only used to request data (not modify)</li>
+                </ul>
+            </div>
+            <br>
+
+            <hr style="margin: 5px;">
+
+            <div class="section_three">
+                <h3>The POST Method</h3>
+                <p>
+                    POST is used to send data to a server to create/update a resource. <br>
+                    The data sent to the server with POST is stored in the request body of the HTTP request:
+                </p>
+                <div class="bluebox">
+                    POST /test/registration.php HTTP/1.1 <br>
+                    Host: example.com <br> <br>
+
+                    name1=value1&name2=value2
+                </div>
+                <strong>Some notes on POST requests:</strong>
+                <ul style="padding-left: 30px;">
+                    <li>POST requests are never cached</li>
+                    <li>POST requests do not remain in the browser history</li>
+                    <li>POST requests cannot be bookmarked</li>
+                    <li>POST requests have no restrictions on data length</li>
+                </ul>
+            </div>
+            <br>
+
+            <hr style="margin: 5px;">
+
+            <div class="section_four">
+                <h3>Compare GET vs. POST</h3>
+                <p>
+                    The following table compares the two HTTP methods: GET and POST.
+                </p>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th style="width: 20%;">Title</th>
+                        <th style="width: 40%;">GET</th>
+                        <th style="width: 40%;">POST</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>BACK Button/Reload</td>
+                        <td>Harmless</td>
+                        <td>Data will be re-submitted (the browser should alert the user that the data are about to be re-submitted)</td>
+                    </tr>
+                    <tr>
+                        <td>Bookmarked</td>
+                        <td>Can be bookmarked</td>
+                        <td>Cannot be bookmarked</td>
+                    </tr>
+                    <tr>
+                        <td>Cached</td>
+                        <td>Can be cached</td>
+                        <td>Not cached</td>
+                    </tr>
+                    <tr>
+                        <td>Encoding Type</td>
+                        <td>application/x-www-form-urlencoded</td>
+                        <td>application/x-www-form-urlencoded or multipart/form-data. Use multipart encoding for binary data</td>
+                    </tr>
+                    <tr>
+                        <td>History</td>
+                        <td>Parameters remain in browser history</td>
+                        <td>Parameters are not saved in browser history</td>
+                    </tr>
+                    <tr>
+                        <td>Restrictions on Data Length</td>
+                        <td>Yes, when sending data, the GET method adds the data to the URL; and the length of a URL is limited (maximum URL length is 2048 characters)</td>
+                        <td>No restrictions</td>
+                    </tr>
+                    <tr>
+                        <td>Restrictions on Data Type</td>
+                        <td>Only ASCII characters allowed</td>
+                        <td>No restrictions. Binary data is also allowed</td>
+                    </tr>
+                    <tr>
+                        <td>Security</td>
+                        <td>
+                            GET is less secure compared to POST because data sent is part of the URL <br>
+                            Never use GET when sending passwords or other sensitive information.
+                        </td>
+                        <td>POST is a little safer than GET because the parameters are not stored in browser history or in web server logs</td>
+
+                    </tr>
+                    <tr>
+                        <td>Visibility</td>
+                        <td>Data is visible to everyone in the URL</td>
+                        <td>Data is not displayed in the URL</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+
+            <hr style="margin: 5px;">
+
+            <h3>The PUT Method</h3>
+            <p>
+                PUT is used to send data to a server to create/update a resource. <br>
+                The difference between POST and PUT is that PUT requests are idempotent. <br>
+                That is, calling the same PUT request multiple times will always produce the same result. <br>
+                In contrast, calling a POST request repeatedly have side effects of creating the same resource multiple times.
+            </p>
+            <br>
+
+            <hr style="margin: 5px;">
+
+            <h3>The HEAD Method</h3>
+            <p>
+                HEAD is almost identical to GET, but without the response body. <br>
+                In other words, if GET /users returns a list of users, then HEAD /users will make the same request but will not return the list of users. <br>
+                HEAD requests are useful for checking what a GET request will return before actually making a GET request - like before downloading a large file or response body.
+            </p>
+            <br>
+
+            <hr style="margin: 5px;">
+
+            <h3>The DELETE Method</h3>
+            <p>
+                The DELETE method deletes the specified resource.
+            </p>
+            <br>
+
+            <hr style="margin: 5px;">
+
+            <h3>The PATCH Method</h3>
+            <p>
+                The PATCH method is used to apply partial modifications to a resource.
+            </p>
+            <br>
+
+            <hr style="margin: 5px;">
+
+            <h3>The OPTIONS Method</h3>
+            <p>
+                The OPTIONS method describes the communication options for the target resource.
+            </p>
+            <br>
+
+            <hr style="margin: 5px;">
+
+            <h3>The CONNECT Method</h3>
+            <p>
+                The CONNECT method is used to start a two-way communications (a tunnel) with the requested resource.
+            </p>
+            <br>
+
+            <hr style="margin: 5px;">
+
+            <h3>The TRACE Method</h3>
+            <p>
+                The TRACE method is used to perform a message loop-back test that tests the path for the target resource (useful for debugging purposes).
+            </p>
         </div>
     </div>
 </div>
