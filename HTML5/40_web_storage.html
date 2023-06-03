@@ -452,27 +452,50 @@
 
             <hr style="margin: 5px;">
             <div class="section_four">
-                <h3>SectionHeading</h3>
+                <h3>The sessionStorage Object</h3>
                 <p>
-                    SectionDescription <br>
-                    SectionDescription <br>
-                    SectionDescription
+                    The sessionStorage object is equal to the localStorage object, except that it stores the data for only one session. The data is deleted when the user closes the specific browser tab.<br>
+                    The following example counts the number of times a user has clicked a button, in the current session:
                 </p>
 
                 <table>
                     <thead>
                     <tr>
                         <th>Example Code</th>
-                        <th>Output</th>
+                        <th>Sample Output</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
                         <td>
-                            &lt;StartTag&gt; Content &lt;&sol;EndTag&gt;
+                            <strong><i>HTML Code</i></strong><br>
+                            &lt;p&gt;&lt;button onclick="clickCounter()" type="button">Click me!&lt;&sol;button&gt;&lt;&sol;p&gt;<br>
+                            &lt;div id="result"&gt;&lt;&sol;div&gt;
                         </td>
+                        <td rowspan="2">
+                            <p><button onclick="clickCounter()" type="button" style="padding: 5px;">Click Me</button></p>
+                            <div id="result"></div>
+                            <p>Click the button to see the counter increase.</p>
+                            <p>Close the browser tab (or window), and try again, and the counter is reset.</p>
+                        </td>
+                    </tr>
+                    <tr>
                         <td>
-                            <p>Paragraph One</p>
+                            <strong><i>JavaScript Code</i></strong><br>
+                            &lt;script&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; function clickCounter() {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (typeof(Storage) !== "undefined") {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (sessionStorage.clickcount) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sessionStorage.clickcount = 1;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage.";<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; }<br>
+                            &lt;&sol;script&gt;
                         </td>
                     </tr>
                     </tbody>
@@ -509,7 +532,20 @@
         // Retrieve
         document.getElementById("username").innerHTML = localStorage.getItem("name");
     } else {
-        document.getElementById("username").innerHTML = "Sorry, your browser does not support Web Storage...";
+        document.getElementById("username").innerHTML = "Sorry, your browser does not support Web Storage.";
+    }
+
+    function clickCounter() {
+        if (typeof(Storage) !== "undefined") {
+            if (sessionStorage.clickcount) {
+                sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+            } else {
+                sessionStorage.clickcount = 1;
+            }
+            document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
+        } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage.";
+        }
     }
 </script>
 <!--Page Specific JavaScript End-->
