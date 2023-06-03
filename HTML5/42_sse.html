@@ -128,7 +128,6 @@
                     <span class="item">HTML CSS</span>
                 </a>
             </li>
-
             <li>
                 <a href="13_links.html">
                     <span class="icon"><i class="fas fa-code"></i></span>
@@ -353,7 +352,107 @@
             </div>
         </div>
         <div class="container">
+            <div class="section_name">
+                <h2>HTML Server-Sent Events (SSE) - One Way Messaging</h2>
+                <p>
+                    Server-Sent Events (SSE) allow a web page to get updates from a server. <br>
+                    A server-sent event is when a web page automatically gets updates from a server. <br>
+                    This was also possible before, but the web page would have to ask if any updates were available. With server-sent events, the updates come automatically. <br>
+                    Examples: Facebook/Twitter updates, stock price updates, news feeds, sport results, etc.
+                </p>
+                <br>
+                <hr style="margin: 5px;">
 
+                <h3>Check Server-Sent Events Support</h3>
+                <p>In the tryit example above there were some extra lines of code to check browser support for server-sent events:</p>
+                <div class="bluebox">
+                    if(typeof(EventSource) !== "undefined") { <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; // Yes! Server-sent events support! <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; // Some code..... <br>
+                    } else { <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; // Sorry! No server-sent events support..... <br>
+                    }
+                </div>
+                <br>
+                <hr style="margin: 5px;">
+
+                <h3>Server-Side Code Example</h3>
+                <p>
+                    For the example above to work, you need a server capable of sending data updates (like PHP or ASP).<br>
+                    The server-side event stream syntax is simple. Set the "Content-Type" header to "text/event-stream". Now you can start sending event streams.<br>
+                    Code in PHP (sse.php):
+                </p>
+                <div class="bluebox">
+                    &lt;?php<br>
+                    header('Content-Type: text/event-stream');<br>
+                    header('Cache-Control: no-cache');<br><br>
+
+                    $time = date('r');<br>
+                    echo "data: The server time is: {$time}\n\n";<br>
+                    flush();<br>
+                    ?&gt;
+                </div>
+                <br>
+                <hr style="margin: 5px;">
+
+                <h3>Receive Server-Sent Event Notifications</h3>
+                <p>The EventSource object is used to receive server-sent event notifications:</p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Example Code</th>
+                        <th>Sample Output</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><strong><i>HTML Code</i></strong></td>
+                        <td rowspan="6">
+                            <h2>Getting Server Times</h2>
+                            <div id="result"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lt;h2&gt;Getting Server Times&lt;&sol;h2&gt;<br>
+                            &lt;div id="result"&gt;&lt;&sol;div&gt;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong><i>JavaScript Code</i></strong></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lt;script&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; if(typeof(EventSource) !== "undefined") { <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var source = new EventSource("demo_sse.php"); <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; source.onmessage = function(event) { <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("result").innerHTML += event.data + "&lt;br&gt;"; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; } else { <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events..."; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; } <br>
+                            &lt;&sol;script&gt;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong><i>PHP Code (sse.php)</i></strong></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lt;?php <br>
+                            header('Content-Type: text/event-stream');<br>
+                            header('Cache-Control: no-cache');<br><br>
+
+                            $time = date('r');<br>
+                            echo "data: The server time is: {$time}\n\n";<br>
+                            flush();<br>
+                            ?&gt;
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
@@ -377,6 +476,15 @@
     menuHideShow.addEventListener("click", function(){
         document.querySelector("body").classList.toggle("active");
     });
+
+    if(typeof(EventSource) !== "undefined") {
+        var source = new EventSource("sse.php");
+        source.onmessage = function(event) {
+            document.getElementById("result").innerHTML += event.data + "<br>";
+        };
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events...";
+    }
 </script>
 <!--Page Specific JavaScript End-->
 
